@@ -50,8 +50,8 @@ class PendudukController extends Controller
         $penduduk = Penduduk::with('pekerjaan', 'pendidikan')->get();
 
         // variabel untuk menampilkan data pekerjaan dan pendidikan pada select option
-        $pekerjaan = Pekerjaan::all()->map(fn($p) => ['value' => $p->id, 'label' => $p->pekerjaan])->toArray();
-        $pendidikan = Pendidikan::all()->map(fn($p) => ['value' => $p->id,'label' => $p->pendidikan])->toArray();
+        $pekerjaan = Pekerjaan::all()->map(fn($p) => ['value' => $p->id, 'label' => $p->nama_pekerjaan])->toArray();
+        $pendidikan = Pendidikan::all()->map(fn($p) => ['value' => $p->id,'label' => $p->jenjang])->toArray();
 
         $ayah_id = Penduduk::where('jenis_kelamin', 'L')
         ->where('status_perkawinan', 'kawin')
