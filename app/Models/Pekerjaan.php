@@ -3,10 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Pekerjaan extends Model
 {
     protected $guarded = [];
+    public $table = 'pekerjaan';
+
 
     protected static function boot()
     {

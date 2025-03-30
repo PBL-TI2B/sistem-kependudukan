@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class KartuKeluarga extends Model
 {
     protected $guarded = [];
+    public $table = 'kartu_keluarga';
 
     protected static function boot()
     {

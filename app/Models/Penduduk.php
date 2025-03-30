@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Penduduk extends Model
 {
     protected $guarded = [];
+    public $table = 'penduduk';
 
     protected static function boot()
     {
@@ -16,5 +18,15 @@ class Penduduk extends Model
                 $model->uuid = Str::uuid(); 
             }
         });
+    }
+
+    public function pekerjaan()
+    {
+        return $this->belongsTo(Pekerjaan::class, 'pekerjaan_id', 'id');
+    }
+
+    public function pendidikan()
+    {
+        return $this->belongsTo(Pendidikan::class, 'pendidikan_id', 'id');
     }
 }

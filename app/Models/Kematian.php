@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Kematian extends Model
 {
     protected $guarded = [];
+    public $table = 'kematian';
 
     protected static function boot()
     {

@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Domisili extends Model
 {
     protected $guarded = [];
+    public $table = 'domisili';
 
     protected static function boot()
     {
