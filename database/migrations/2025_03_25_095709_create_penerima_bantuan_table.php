@@ -14,14 +14,12 @@ return new class extends Migration
         Schema::create('penerima_bantuan', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('kurang_mampu_id');
-            $table->uuid('bantuan_id');
             $table->enum('status', ['aktif', 'selesai', 'ditolak']);
             $table->date('tanggal_penerimaan');
             $table->text('keterangan')->nullable();
 
-            $table->foreign('kurang_mampu_id')->references('uuid')->on('kurang_mampu')->cascadeOnDelete();
-            $table->foreign('bantuan_id')->references('uuid')->on('bantuan')->cascadeOnDelete();
+            $table->foreignId('kurang_mampu_id')->constrained('kurang_mampu')->cascadeOnDelete();
+            $table->foreignId('bantuan_id')->constrained('bantuan')->cascadeOnDelete();
             
             $table->timestamps();
         });

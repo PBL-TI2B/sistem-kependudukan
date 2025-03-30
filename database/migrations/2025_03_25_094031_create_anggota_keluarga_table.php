@@ -14,14 +14,11 @@ return new class extends Migration
         Schema::create('anggota_keluarga', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('kk_id');
-            $table->uuid('penduduk_id');
-            $table->uuid('status_keluarga_id');
 
-            $table->foreign('kk_id')->references('uuid')->on('kartu_keluarga')->onDelete('cascade');
-            $table->foreign('penduduk_id')->references('uuid')->on('penduduk')->onDelete('cascade');
-            $table->foreign('status_keluarga_id')->references('uuid')->on('status_keluarga')->onDelete('cascade');
-            
+            $table->foreignId('kk_id')->constrained('kartu_keluarga')->onDelete('cascade');
+            $table->foreignId('penduduk_id')->constrained('penduduk')->onDelete('cascade');
+            $table->foreignId('status_keluarga_id')->constrained('status_keluarga')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

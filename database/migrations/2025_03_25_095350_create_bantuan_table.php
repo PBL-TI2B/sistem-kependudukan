@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('periode', 50);
             $table->string('lama_periode', 50);
             $table->string('instansi', 50);
-            $table->text('keterangan');
+            $table->text('keterangan')->nullable();
             $table->timestamps();
         });
     }

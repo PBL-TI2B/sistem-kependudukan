@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('kematian', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('penduduk_id');
             $table->date('tanggal_kematian');
             $table->string('sebab_kematian', 50);
 
-            $table->foreign('penduduk_id')->references('uuid')->on('penduduk')->cascadeOnDelete();
+            $table->foreignId('penduduk_id')->constrained('penduduk')->onDelete('cascade');
+            
             $table->timestamps();
         });
     }

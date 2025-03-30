@@ -14,15 +14,15 @@ return new class extends Migration
         Schema::create('kelahiran', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('penduduk_id');
             $table->string('anak_ke', 50);
             $table->string('berat', 50)->nullable();
             $table->string('panjang', 50)->nullable();
-            $table->datetime('waktu_lahir')->nullable();
+            $table->datetime('waktu_kelahiran')->nullable();
             $table->string('lokasi', 50)->nullable();
-            $table->text('keterangan');
+            $table->text('keterangan')->nullable();
 
-            $table->foreign('penduduk_id')->references('uuid')->on('penduduk')->onDelete('cascade');
+            $table->foreignId('penduduk_id')->constrained('penduduk')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

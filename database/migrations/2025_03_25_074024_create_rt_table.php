@@ -15,11 +15,10 @@ return new class extends Migration
             $table->id();
             $table->uuid('uuid')->unique();
             $table->string('nomor_rt', 50);
-            $table->uuid('rw_id');
-            $table->uuid('perangkat_id');
             
-            $table->foreign('perangkat_id')->references('uuid')->on('perangkat_desa')->onDelete('cascade');
-            $table->foreign('rw_id')->references('uuid')->on('rw')->onDelete('cascade');
+            $table->foreignId('perangkat_id')->constrained('perangkat_desa')->onDelete('cascade');
+            $table->foreignId('rw_id')->constrained('rw')->onDelete('cascade');
+            
             $table->timestamps();
         });
     }

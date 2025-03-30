@@ -26,13 +26,13 @@ return new class extends Migration
             $table->enum('status_perkawinan', ['kawin', 'belum kawin']);
             $table->string('tinggi_badan', 20)->nullable();
             $table->enum('status', ['hidup', 'mati']);
-        
-            $table->uuid('ibu_id')->nullable();
-            $table->uuid('ayah_id')->nullable();
-        
-            $table->foreign('ibu_id')->references('uuid')->on('penduduk')->onDelete('set null');
-            $table->foreign('ayah_id')->references('uuid')->on('penduduk')->onDelete('set null');
-        
+
+            $table->foreignId('pekerjaan_id')->constrained('pekerjaan')->onDelete('cascade');
+            $table->foreignId('pendidikan_id')->constrained('pendidikan')->onDelete('cascade');
+
+            $table->foreignId('ibu_id')->nullable()->constrained('penduduk')->onDelete('set null');
+            $table->foreignId('ayah_id')->nullable()->constrained('penduduk')->onDelete('set null');
+
             $table->timestamps();
         });        
     }

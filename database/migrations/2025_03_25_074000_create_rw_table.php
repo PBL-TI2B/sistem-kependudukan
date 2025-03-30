@@ -15,9 +15,8 @@ return new class extends Migration
             $table->id();
             $table->uuid('uuid')->unique();
             $table->string('nomor_rw', 50);
-            $table->uuid('perangkat_id');
             
-            $table->foreign('perangkat_id')->references('uuid')->on('perangkat_desa')->onDelete('cascade');
+            $table->foreignId('perangkat_id')->constrained('perangkat_desa')->onDelete('cascade');
             $table->timestamps();
         });
     }

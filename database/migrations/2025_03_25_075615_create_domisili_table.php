@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('domisili', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('penduduk_id');
-            $table->uuid('rt_id');
             $table->enum('status_tempat_tinggal', ['tetap', 'sementara']);
 
-            $table->foreign('penduduk_id')->references('uuid')->on('penduduk')->onDelete('cascade');
-            $table->foreign('rt_id')->references('uuid')->on('rt')->onDelete('cascade');
+
+            $table->foreignId('penduduk_id')->constrained('penduduk')->onDelete('cascade');
+            $table->foreignId('rt_id')->constrained('rt')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

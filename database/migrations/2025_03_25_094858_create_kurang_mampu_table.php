@@ -14,13 +14,14 @@ return new class extends Migration
         Schema::create('kurang_mampu', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('anggota_keluarga_id');
             $table->string('pendapatan_per_hari', 50)->nullable();
             $table->string('pendapatan_per_bulan', 50)->nullable();
+            $table->string('jumlah_tanggungan', 50)->nullable();
             $table->enum('status_validasi', ['pending', 'terverifikasi', 'ditolak'])->default('pending');
             $table->text('keterangan')->nullable();
 
-            $table->foreign('anggota_keluarga_id')->references('uuid')->on('anggota_keluarga')->onDelete('cascade');
+            $table->foreignId('anggota_keluarga_id')->constrained('anggota_keluarga')->onDelete('cascade');
+
             $table->timestamps();
         });
     }

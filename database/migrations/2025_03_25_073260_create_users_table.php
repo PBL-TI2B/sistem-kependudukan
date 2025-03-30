@@ -18,9 +18,8 @@ return new class extends Migration
             $table->string('password');
             $table->enum('role', ['superadmin', 'admin','rt', 'rw']);
             $table->enum('status', ['aktif', 'nonaktif']);
-            $table->uuid('perangkat_id')->nullable();
 
-            $table->foreign('perangkat_id')->references('uuid')->on('perangkat_desa')->onDelete('set null');
+            $table->foreignId('perangkat_id')->nullable()->constrained('perangkat_desa')->onDelete('set null');
             
             $table->rememberToken();
             $table->timestamps();

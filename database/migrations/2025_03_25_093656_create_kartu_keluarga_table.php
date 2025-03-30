@@ -15,14 +15,13 @@ return new class extends Migration
             $table->id();
             $table->uuid('uuid')->unique();
             $table->string('nomor_kk', 50);
-            $table->uuid('rt_id');
             $table->string('kode_pos', 50);
             $table->string('kelurahan', 50);
             $table->string('kecamatan', 50);
             $table->string('kabupaten', 50);
             $table->string('provinsi', 50);
 
-            $table->foreign('rt_id')->references('uuid')->on('rt')->onDelete('cascade');
+            $table->foreignId('rt_id')->constrained('rt')->onDelete('cascade');
             $table->timestamps();
         });
     }

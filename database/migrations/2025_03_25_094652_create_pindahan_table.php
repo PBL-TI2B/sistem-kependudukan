@@ -11,15 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pindahans', function (Blueprint $table) {
+        Schema::create('pindahan', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('penduduk_id');
             $table->enum('status_pindahan', ['masuk', 'keluar']);
-            $table->date('tanggal_pindah');
+            $table->date('tanggal_pindahan');
             $table->text('alamat_asal_tujuan')->nullable();
             
-            $table->foreign('penduduk_id')->references('uuid')->on('penduduk')->cascadeOnDelete();
+            $table->foreignId('penduduk_id')->constrained('penduduk')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pindahans');
+        Schema::dropIfExists('pindahan');
     }
 };
