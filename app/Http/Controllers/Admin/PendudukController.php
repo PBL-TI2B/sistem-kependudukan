@@ -8,7 +8,6 @@ use App\Models\Penduduk;
 use App\Models\Pekerjaan;
 use App\Models\Pendidikan;
 use Barryvdh\DomPDF\Facade\Pdf;
-use App\Exports\PendudukExport;
 
 class PendudukController extends Controller
 {
