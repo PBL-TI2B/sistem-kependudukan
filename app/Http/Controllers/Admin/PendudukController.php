@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Models\Penduduk;
 use App\Models\Pekerjaan;
 use App\Models\Pendidikan;
+use Barryvdh\DomPDF\Facade\Pdf;
+use App\Exports\PendudukExport;
 
 class PendudukController extends Controller
 {
@@ -17,10 +19,11 @@ class PendudukController extends Controller
     {
         $tableColumns = [
             ['label' => 'Nama', 'key' => 'nama_lengkap'],
-            ['label' => 'Tempat Tanggal Lahir', 'key' => 'tempat_lahir'],
+            ['label' => 'Tempat Lahir', 'key' => 'tempat_lahir'],
+            ['label' => 'Tanggal Lahir', 'key' => 'tanggal_lahir'],
             ['label' => 'Jenis Kelamin', 'key' => 'jenis_kelamin'],
-            ['label' => 'Pekerjaan', 'key' => 'pekerjaan.pekerjaan'],
-            ['label' => 'Pendidikan', 'key' => 'pendidikan.pendidikan'],
+            ['label' => 'Pekerjaan', 'key' => 'pekerjaan.nama_pekerjaan'],
+            ['label' => 'Pendidikan', 'key' => 'pendidikan.jenjang'],
             ['label' => 'Status Perkawinan', 'key' => 'status_perkawinan'],
         ];
         $penduduk = Penduduk::with('pekerjaan', 'pendidikan')->paginate(6);
@@ -31,15 +34,50 @@ class PendudukController extends Controller
     public function search(Request $request) 
     {   $tableColumns = [
             ['label' => 'Nama', 'key' => 'nama_lengkap'],
-            ['label' => 'Tempat Tanggal Lahir', 'key' => 'tempat_lahir'],
+            ['label' => 'Tempat Lahir', 'key' => 'tempat_lahir'],
+            ['label' => 'Tanggal Lahir', 'key' => 'tanggal_lahir'],
             ['label' => 'Jenis Kelamin', 'key' => 'jenis_kelamin'],
-            ['label' => 'Pekerjaan', 'key' => 'pekerjaan.pekerjaan'],
-            ['label' => 'Pendidikan', 'key' => 'pendidikan.pendidikan'],
+            ['label' => 'Pekerjaan', 'key' => 'pekerjaan.nama_pekerjaan'],
+            ['label' => 'Pendidikan', 'key' => 'pendidikan.jenjang'],
             ['label' => 'Status Perkawinan', 'key' => 'status_perkawinan'],
         ];
         $search = $request->search;
-        $penduduk = Penduduk::where('nama_lengkap', 'like', '%'.$search.'%')->paginate(6);
+        $penduduk = Penduduk::where('nama_lengkap', 'like', '%'.$search.'%')->with('pekerjaan', 'pendidikan')->paginate(6);
         return view('admin.penduduk.index', compact('penduduk', 'tableColumns'));
+    }
+
+    // fungsi export pdf
+    public function exportPdf()
+    {
+        $penduduk = Penduduk::with('pekerjaan', 'pendidikan')->get();
+        $pdf = Pdf::loadView('admin.penduduk.data-penduduk', compact('penduduk'));
+        return $pdf->download('data-penduduk.pdf');
+    }
+
+    // fungsi export excel
+    public function exportExcel()
+    {
+        $headers = [
+            'Content-Type' => 'text/csv',
+            'Content-Disposition' => 'attachment; filename="penduduk.csv"',
+        ];
+    
+        $callback = function () {
+            $handle = fopen('php://output', 'w');
+            fputcsv($handle, ['Nama', 'NIK', 'Tanggal Lahir']);
+    
+            foreach (Penduduk::all() as $data) {
+                fputcsv($handle, [
+                    $data->nama_lengkap,
+                    $data->nik,
+                    $data->tanggal_lahir,
+                ]);
+            }
+    
+            fclose($handle);
+        };
+    
+        return response()->stream($callback, 200, $headers);
     }
 
     /**
@@ -96,8 +134,6 @@ class PendudukController extends Controller
                 'agama' => 'required',
                 'status_perkawinan' => 'required',
                 'status'=>'required',
-                'ayah_id' => 'nullable|exists:penduduk,id|not_in:'.$penduduk->id,
-                'ibu_id' => 'nullable|exists:penduduk,id|not_in:'.$penduduk->id,
             ],
             [
                 'nik.required' => 'NIK wajib diisi',
@@ -177,8 +213,6 @@ class PendudukController extends Controller
             'agama' => 'required',
             'status_perkawinan' => 'required',
             'status'=>'required',
-            'ayah_id' => 'nullable|exists:penduduk,id|not_in:'.$penduduk->id,
-            'ibu_id' => 'nullable|exists:penduduk,id|not_in:'.$penduduk->id,
         ],
         [
             'nik.required' => 'NIK wajib diisi',
