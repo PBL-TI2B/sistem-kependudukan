@@ -38,6 +38,7 @@
           </div>
         </div>
         <div class="ml-auto mr-8 flex space-x-8">
+<<<<<<< HEAD
           <a href="#" class="text-[#F6C646] font-semibold hover:text-[#F6C646]"
             >Beranda</a
           >
@@ -59,6 +60,15 @@
             >Masuk</a
           >
         </div>
+=======
+          <a href="../beranda" class="text-[#F6C646] font-semibold hover:text-[#F6C646]">Beranda</a>
+          <a href="../profilDesa" class="text-white font-semibold hover:underline">Profil Desa</a>
+          <a href="../infografis" class="text-white font-semibold hover:underline">Infografis</a>
+          <a href="../berita" class="text-white font-semibold hover:underline">Berita</a>
+          <a href="../galeri" class="text-white font-semibold hover:underline">Galeri</a>
+          <a href="#" class="bg-[#E5A025] text-black px-4 py-1 rounded-full hover:bg-[#d9981c] transition">Masuk</a>
+    </div>
+>>>>>>> 2fb2520f428c810c2d5d619e1c6323484fc29d27
       </nav>
     </div>
 
