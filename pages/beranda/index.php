@@ -6,11 +6,11 @@
     <title>Desa Jabung</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-white">
+  <body class="bg-gray-100 text-gray-800">
     <!-- Hero-->
     <div
       class="relative w-full h-[80vh] md:h-[90vh] bg-cover bg-center"
-      style="background-image: url('kantor-desa.png')"
+      style="background-image: url('../../src/kantor-desa.png')"
     >
       <!-- Hero Content -->
       <div
@@ -31,16 +31,20 @@
         <div
           class="flex justify-center md:justify-start items-center space-x-4"
         >
-          <img src="logo.png" alt="Logo" class="h-12 md:h-14" />
+        <img src="../../src/logo.png" alt="Logo Desa Jabung" class="h-16">
+        <div class="leading-tight">
+          <p class="text-sm font-bold text-[#F6C646]">Desa Jabung</p>
+          <p class="text-xs text-white">Kabupaten Klaten</p>
         </div>
-        <div
-          class="flex flex-wrap justify-center md:justify-end gap-6 mt-2 md:mt-0 text-sm md:text-lg font-semibold"
-        >
-          <a href="#" class="hover:underline">Beranda</a>
-          <a href="#" class="hover:underline">Profil Desa</a>
-          <a href="#" class="hover:underline">Infografis</a>
-          <a href="#" class="hover:underline">Berita</a>
         </div>
+        <div class="ml-auto mr-8 flex space-x-8">
+          <a href="#" class="text-[#F6C646] font-semibold hover:text-[#F6C646]">Beranda</a>
+          <a href="#" class="text-white font-semibold hover:underline">Profil Desa</a>
+          <a href="#" class="text-white font-semibold hover:underline">Infografis</a>
+          <a href="#" class="text-white font-semibold hover:underline">Berita</a>
+          <a href="#" class="text-white font-semibold hover:underline">Galeri</a>
+          <a href="#" class="bg-[#E5A025] text-black px-4 py-1 rounded-full hover:bg-[#d9981c] transition">Masuk</a>
+    </div>
       </nav>
     </div>
 
@@ -48,7 +52,7 @@
     <div class="bg-[#0B391D] text-white relative w-full py-20 px-6 md:px-10">
       <!-- Statistik -->
       <div
-        class="absolute left-1/2 -translate-x-1/2 -top-16 bg-[#192019] text-white rounded-xl px-6 py-6 w-11/12 md:w-10/12 shadow-lg"
+        class="absolute left-1/2 -translate-x-1/2 -top-16 bg-[#192019] text-white rounded-br-full rounded-tl-full px-6 py-6 w-11/12 md:w-10/12 shadow-lg"
       >
         <div class="grid grid-cols-2 sm:grid-cols-4 text-center gap-4">
           <div>
@@ -85,7 +89,7 @@
         </div>
         <!-- Gambar -->
         <img
-          src="kepala-desa.png"
+          src="../../src/kepala-desa.png"
           alt="Kepala Desa"
           class="mt-6 md:mt-0 h-56 w-56 md:h-[250px] md:w-[250px] object-cover shadow-lg rounded-full"
           style="border-radius: 100px 130px 100px 140px"
@@ -110,7 +114,7 @@
             class="bg-white text-[#0B391D] p-4 rounded-lg shadow-lg border border-[#0B391D]"
           >
             <img
-              src="berita-utama.png"
+              src="../../src/berita-utama.png"
               alt="Berita Utama"
               class="w-full h-56 object-cover"
             />
@@ -133,7 +137,7 @@
               class="flex gap-4 bg-white text-[#0B391D] p-3 rounded-lg shadow-md border border-[#0B391D]"
             >
               <img
-                src="berita-lain.png"
+                src="../../src/berita-lain.png"
                 alt="Berita lainnya"
                 class="w-24 h-24 object-cover"
               />
@@ -185,38 +189,59 @@
     <div class="overflow-hidden bg-[#0B391D] text-white p-4">
       <div class="columns-1 sm:columns-2 md:columns-3 gap-4">
         <img
-          src="kantor-desa.png"
+          src="../../src/kantor-desa.png"
           class="w-full mb-4 rounded-lg object-cover"
         />
         <img
-          src="berita-lain.png"
+          src="../../src/berita-lain.png"
           class="w-full mb-4 rounded-lg object-cover"
         />
         <img
-          src="kantor-desa.png"
+          src="../../src/kantor-desa.png"
           class="w-full mb-4 rounded-lg object-cover"
         />
         <img
-          src="berita-lain.png"
+          src="../../src/berita-lain.png"
           class="w-full mb-4 rounded-lg object-cover"
         />
         <img
-          src="kantor-desa.png"
+          src="../../src/kantor-desa.png"
           class="w-full mb-4 rounded-lg object-cover"
         />
         <img
-          src="berita-utama.png"
+          src="../../src/berita-utama.png"
           class="w-full mb-4 rounded-lg object-cover"
         />
         <img
-          src="berita-lain.png"
+          src="../../src/berita-lain.png"
           class="w-full mb-4 rounded-lg object-cover"
         />
         <img
-          src="kepala-desa.png"
+          src="../../src/kepala-desa.png"
           class="w-full mb-4 rounded-lg object-cover"
         />
       </div>
     </div>
+
+    <!-- Peta Desa -->
+      <section class="max-w-3xl mx-auto mt-10 mb-10 px-4">
+        <!-- Judul -->
+        <div class="bg-[#E5A025] text-white font-bold text-center text-xl py-2 rounded-t-md">
+          PETA DESA
+        </div>
+
+        <!-- Peta -->
+        <iframe
+          class="w-full h-[400px] border border-gray-300"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=110.5635%2C-7.7965%2C110.6035%2C-7.7765&layer=mapnik"          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </section>
+
+
+    <!-- Footer -->
+    <?php include '../../components/footer.php' ?>
+    <!-- End Footer -->
+
   </body>
 </html>
