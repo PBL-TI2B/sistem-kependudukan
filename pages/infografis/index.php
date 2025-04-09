@@ -35,8 +35,9 @@
         </div>
 
         <!-- Tab Navigasi -->
-      <div class="flex justify-end space-x-8 mt-6 mb-8">
-        <div class="flex items-center space-x-2 text-gray-500">
+        <div class="flex justify-end space-x-8 mt-6 mb-8 mr-8">
+
+        <div class="flex items-center space-x-2 text-gray-800 border-b-2 border-[#E5A025] pb-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -49,9 +50,8 @@
           </svg>
           <span class="font-medium">Penduduk</span>
         </div>
-        <div
-          class="flex items-center space-x-2 text-gray-800 border-b-2 border-[#E5A025] pb-1"
-        >
+
+        <div class="flex items-center space-x-2 text-gray-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -65,6 +65,8 @@
           <span class="font-medium">Bansos</span>
         </div>
       </div>
+
+
       </div>
     </div>
 
