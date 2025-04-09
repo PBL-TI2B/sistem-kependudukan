@@ -31,20 +31,34 @@
         <div
           class="flex justify-center md:justify-start items-center space-x-4"
         >
-        <img src="../../src/logo.png" alt="Logo Desa Jabung" class="h-16">
-        <div class="leading-tight">
-          <p class="text-sm font-bold text-[#F6C646]">Desa Jabung</p>
-          <p class="text-xs text-white">Kabupaten Klaten</p>
-        </div>
+          <img src="../../src/logo.png" alt="Logo Desa Jabung" class="h-16" />
+          <div class="leading-tight">
+            <p class="text-sm font-bold text-[#F6C646]">Desa Jabung</p>
+            <p class="text-xs text-white">Kabupaten Klaten</p>
+          </div>
         </div>
         <div class="ml-auto mr-8 flex space-x-8">
-          <a href="#" class="text-[#F6C646] font-semibold hover:text-[#F6C646]">Beranda</a>
-          <a href="#" class="text-white font-semibold hover:underline">Profil Desa</a>
-          <a href="#" class="text-white font-semibold hover:underline">Infografis</a>
-          <a href="#" class="text-white font-semibold hover:underline">Berita</a>
-          <a href="#" class="text-white font-semibold hover:underline">Galeri</a>
-          <a href="#" class="bg-[#E5A025] text-black px-4 py-1 rounded-full hover:bg-[#d9981c] transition">Masuk</a>
-    </div>
+          <a href="#" class="text-[#F6C646] font-semibold hover:text-[#F6C646]"
+            >Beranda</a
+          >
+          <a href="#" class="text-white font-semibold hover:underline"
+            >Profil Desa</a
+          >
+          <a href="#" class="text-white font-semibold hover:underline"
+            >Infografis</a
+          >
+          <a href="#" class="text-white font-semibold hover:underline"
+            >Berita</a
+          >
+          <a href="#" class="text-white font-semibold hover:underline"
+            >Galeri</a
+          >
+          <a
+            href="#"
+            class="bg-[#E5A025] text-black px-4 py-1 rounded-full hover:bg-[#d9981c] transition"
+            >Masuk</a
+          >
+        </div>
       </nav>
     </div>
 
@@ -98,9 +112,9 @@
     </div>
 
     <!-- Berita -->
-    <div class="bg-white text-[#0B391D] py-10 px-4 md:px-8">
+    <div class="bg-white text-[#E5A025] py-10 px-4 md:px-8">
       <div class="max-w-6xl mx-auto">
-        <h1 class="text-3xl md:text-4xl font-bold text-center">BERITA DESA</h1>
+        <h1 class="text-xl md:text-xl font-bold text-center">BERITA DESA</h1>
         <div class="flex justify-end mb-4">
           <button
             class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm md:text-base hover:bg-green-700"
@@ -163,7 +177,7 @@
     <!-- Galeri -->
     <div class="bg-white py-10 px-4">
       <div class="max-w-6xl mx-auto text-center">
-        <h1 class="text-3xl md:text-4xl font-bold text-[#0B391D] mb-4">
+        <h1 class="text-xl md:text-xl font-bold text-[#E5A025] mb-4">
           GALERI DESA
         </h1>
         <div class="flex justify-end mb-4">
@@ -224,24 +238,26 @@
     </div>
 
     <!-- Peta Desa -->
-      <section class="max-w-3xl mx-auto mt-10 mb-10 px-4">
-        <!-- Judul -->
-        <div class="bg-[#E5A025] text-white font-bold text-center text-xl py-2 rounded-t-md">
-          PETA DESA
-        </div>
+    <section class="max-w-3xl mx-auto mt-10 mb-10 px-4">
+      <!-- Judul -->
+      <div
+        class="bg-[#E5A025] text-white font-bold text-center text-xl py-2 rounded-t-md"
+      >
+        PETA DESA
+      </div>
 
-        <!-- Peta -->
-        <iframe
-          class="w-full h-[400px] border border-gray-300"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=110.5635%2C-7.7965%2C110.6035%2C-7.7765&layer=mapnik"          allowfullscreen
-          loading="lazy">
-        </iframe>
-      </section>
-
+      <!-- Peta -->
+      <iframe
+        class="w-full h-[400px] border border-gray-300"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=110.5635%2C-7.7965%2C110.6035%2C-7.7765&layer=mapnik"
+        allowfullscreen
+        loading="lazy"
+      >
+      </iframe>
+    </section>
 
     <!-- Footer -->
     <?php include '../../components/footer.php' ?>
     <!-- End Footer -->
-
   </body>
 </html>

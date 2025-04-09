@@ -16,7 +16,7 @@
 
   <div class="bg-white w-full">
   <!-- Judul -->
-  <h1 class="text-center text-[#E5A025] font-bold text-xl py-6">PROFIL DESA</h1>
+  <h1 class="text-center text-[#E5A025] font-bold text-2xl py-6 mb-8">PROFIL DESA</h1>
 
   <!-- Visi dan Misi -->
   <div class="flex flex-col md:flex-row items-center justify-center gap-8 px-6 mb-10">
@@ -45,7 +45,7 @@
 
   <!-- Struktur Organisasi -->
   <div class="px-6">
-    <h2 class="text-[#E5A025] font-bold text-md text-center mb-4">Struktur Organisasi Pemerintahan Desa</h2>
+    <h1 class="text-[#E5A025] font-bold text-xl text-center mb-4">Struktur Organisasi Pemerintahan Desa</h1>
     <img src="../../src/struktur-organisasi.png" alt="Struktur Organisasi" class="w-full max-w-4xl mx-auto mt-8 mb-8" />
   </div>
 
