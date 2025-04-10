@@ -50,7 +50,7 @@
   </div>
 
   <!-- Sejarah Desa -->
-  <div class="mt-16 bg-[#0E462B] text-white px-6 py-10 rounded-t-[200px]">
+  <div class="mt-16 bg-[#0B391D] text-white px-6 py-10 rounded-t-[200px]">
     <h2 class="text-[#E5A025] font-bold text-lg ml-16 mb-4">Sejarah Desa Jabung</h2>
     <p class="text-sm ml-8 mr-8 leading-relaxed">
       Dikaruniai hewani dan hayati yang melimpah dengan tanah yang luas dan subur, serta keragaman budaya. Selamat

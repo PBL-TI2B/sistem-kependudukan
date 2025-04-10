@@ -38,19 +38,19 @@
           </div>
         </div>
         <div class="ml-auto mr-8 flex space-x-8">
-          <a href="#" class="text-[#F6C646] font-semibold hover:text-[#F6C646]"
+          <a href="../beranda" class="text-[#F6C646] font-semibold hover:text-[#F6C646]"
             >Beranda</a
           >
-          <a href="#" class="text-white font-semibold hover:underline"
+          <a href="../profilDesa" class="text-white font-semibold hover:underline"
             >Profil Desa</a
           >
-          <a href="#" class="text-white font-semibold hover:underline"
+          <a href="../infografis" class="text-white font-semibold hover:underline"
             >Infografis</a
           >
-          <a href="#" class="text-white font-semibold hover:underline"
+          <a href="../berita" class="text-white font-semibold hover:underline"
             >Berita</a
           >
-          <a href="#" class="text-white font-semibold hover:underline"
+          <a href="../galeri" class="text-white font-semibold hover:underline"
             >Galeri</a
           >
           <a
