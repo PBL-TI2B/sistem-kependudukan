@@ -29,4 +29,14 @@ class Penduduk extends Model
     {
         return $this->belongsTo(Pendidikan::class, 'pendidikan_id', 'id');
     }
+
+    public function ayah()
+    {
+        return $this->belongsTo(Penduduk::class, 'ayah_id', 'id');
+    }
+
+    public function ibu()
+    {
+        return $this->belongsTo(Penduduk::class, 'ibu_id', 'id');
+    }
 }

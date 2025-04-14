@@ -19,4 +19,12 @@ class Domisili extends Model
             }
         });
     }
+
+    public function rt() {
+        return $this->belongsTo(Rt::class, 'rt_id', 'id');
+    }
+
+    public function penduduk() {
+        return $this->belongsTo(Penduduk::class, 'penduduk_id', 'id');
+    }
 }
