@@ -4,7 +4,11 @@
     <div class="flex items-center justify-between">
     <div class="py-3 px-4">
         <h2 class="text-xl font-semibold dark:text-white mb-2">Manajemen {{ ucfirst($route) }}</h2>
-        <form action="{{ route("admin.$route.search") }}" method="GET" class="relative max-w-md">
+            @if(Route::has("admin.$route.search"))
+              <form action="{{ route("admin.$route.search") }}" method="GET" class="relative max-w-md">
+            @else
+              <form action="" method="GET" class="relative max-w-md">
+            @endif
             <label class="sr-only">Cari data {{ $route }}</label>
             <input type="text" name="search" id="search" class="py-1.5 sm:py-2 px-3 block w-full border border-gray-200 shadow-2xs rounded-lg sm:text-sm focus:z-10  dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 outline-none" placeholder="Cari {{ $route }}">
             <div class="absolute inset-y-0 end-0 flex items-center pe-3">
@@ -26,16 +30,20 @@
               
                 <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg mt-2 divide-y divide-gray-200 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-with-icons">
                   <div class="p-1 space-y-0.5">
+                    @if(Route::has("admin.$route.export-pdf"))
                     <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" 
                     href="{{ route("admin.$route.export-pdf") }}">
                         <i class="ph ph-file-pdf"></i>
                         Export PDF
                     </a>
+                    @endif
+                    @if(Route::has("admin.$route.export-excel"))
                     <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700" 
                     href="{{ route("admin.$route.export-excel") }}">
                         <i class="ph ph-file-xls"></i>
                         Export Excel
                     </a>
+                    @endif
                   </div>
                 </div>
               </div>

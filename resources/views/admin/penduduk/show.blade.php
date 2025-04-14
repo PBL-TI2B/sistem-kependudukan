@@ -47,8 +47,8 @@
                                 <x-ui.simple-table-row label="Status" value="{{ $penduduk->status }}" />
                                 <x-ui.simple-table-row label="Pekerjaan" value="{{ $penduduk->pekerjaan?->nama_pekerjaan }}" />
                                 <x-ui.simple-table-row label="Pendidikan Terakhir" value="{{ $penduduk->pendidikan?->jenjang }}" />
-                                <x-ui.simple-table-row label="Ayah" value="{{ $penduduk->ayah_id?->nama_lengkap ?? '-' }}" />
-                                <x-ui.simple-table-row label="Ibu" value="{{ $penduduk->ibu_id?->nama_lengkap ?? '-' }}" />
+                                <x-ui.simple-table-row label="Ayah" value="{{ $penduduk->ayah?->nama_lengkap ?? '-' }}" />
+                                <x-ui.simple-table-row label="Ibu" value="{{ $penduduk->ibu?->nama_lengkap ?? '-' }}" />
                             </tbody>
                         </table>
                     </div>
