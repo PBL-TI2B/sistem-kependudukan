@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('perangkat_desa', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->string('periode_menjabat', 50);
             $table->enum('status_keaktifan', ['aktif', 'nonaktif']);
 
             $table->foreignId('penduduk_id')->constrained('penduduk')->onDelete('cascade');

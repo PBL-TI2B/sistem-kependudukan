@@ -6,5 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Desa extends Model
 {
-    //
+    protected $guarded = [];
+    public $table = 'desa';
+
+    protected static function boot()
+    {
+        parent::boot();
+        static::creating(function ($model) {
+            if (!$model->uuid) {
+                $model->uuid = Str::uuid(); 
+            }
+        });
+    }
 }

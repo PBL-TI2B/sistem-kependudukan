@@ -11,6 +11,16 @@ class DatabaseSeeder extends Seeder
 {
     public function run()
     {
+        DB::table('desa')->insert([
+            [
+                'id'=>1,
+                'uuid'=>Str::uuid(),
+                'nama'=>'Desa Jabung',
+                'deskripsi'=> 'Desa Jabung adalah desa yang terletak di Kabupaten Klaten',
+                'lokasi'=>'Kabupaten Klaten, Provinsi Jawa Tengah',
+            ]
+        ]);
+
         DB::table('pendidikan')->insert([
             [
                 'id' => 1,
@@ -310,14 +320,52 @@ class DatabaseSeeder extends Seeder
             ],
         ]);
 
+        DB::table('periode_jabatan')->insert([
+            [
+                'id' => 1,
+                'uuid' => Str::uuid(),
+                'nama' => 'Periode 2021-2026',
+                'keterangan' => '',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+        ]);
+
+
+        $rwUuid = Str::uuid();
+        DB::table('rw')->insert([
+            [
+                'id' => 1,
+                'uuid' => $rwUuid,
+                'nomor_rw' => '001',
+                'desa_id'=>1,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+        ]);
+
+        DB::table('rt')->insert([
+            [
+                'id' => 1,
+                'uuid' => Str::uuid(),
+                'nomor_rt' => '001',
+                'rw_id' => 1,
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+        ]);
+
         DB::table('perangkat_desa')->insert([
             [
                 'id' => 1,
                 'uuid' => Str::uuid(),
                 'penduduk_id' => 1, 
                 'jabatan_id' => 1, 
-                'periode_menjabat' => '2021-2026',
+                'periode_jabatan_id' => 1,
                 'status_keaktifan' => 'AKTIF',
+                'desa_id'=> 1,
+                'rt_id' => 1,
+                'rw_id' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
@@ -332,30 +380,6 @@ class DatabaseSeeder extends Seeder
                 'role' => 'ADMIN',
                 'status' => 'AKTIF',
                 'perangkat_id' => 1, 
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
-            ],
-        ]);
-
-        $rwUuid = Str::uuid();
-        DB::table('rw')->insert([
-            [
-                'id' => 1,
-                'uuid' => $rwUuid,
-                'nomor_rw' => '001',
-                'perangkat_id' => 1,
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now(),
-            ],
-        ]);
-
-        DB::table('rt')->insert([
-            [
-                'id' => 1,
-                'uuid' => Str::uuid(),
-                'nomor_rt' => '001',
-                'perangkat_id' => 1,
-                'rw_id' => 1,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
