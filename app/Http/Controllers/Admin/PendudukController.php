@@ -90,17 +90,23 @@ class PendudukController extends Controller
         $pekerjaan = Pekerjaan::all()->map(fn($p) => ['value' => $p->id, 'label' => $p->nama_pekerjaan])->toArray();
         $pendidikan = Pendidikan::all()->map(fn($p) => ['value' => $p->id,'label' => $p->jenjang])->toArray();
 
-        $ayah_id = Penduduk::where('jenis_kelamin', 'L')
-        ->where('status_perkawinan', 'kawin')
-        ->get()
-        ->map(fn($p) => [
-            'value' => $p->id,
-            'label' => $p->nama_lengkap
-        ])
-        ->toArray();
+        $ayahTerpakai = Penduduk::whereNotNull('ayah_id')->pluck('ayah_id')->toArray();
 
+        $ayah_id = Penduduk::where('jenis_kelamin', 'L')
+            ->where('status_perkawinan', 'kawin')
+            ->whereNotIn('id', $ayahTerpakai)
+            ->select('id', 'nama_lengkap')
+            ->get()
+            ->map(fn($p) => [
+                'value' => $p->id,
+                'label' => $p->nama_lengkap
+            ])
+            ->toArray();
+
+        $ibuTerpakai = Penduduk::whereNotNull('ibu_id')->pluck('ibu_id')->toArray();
         $ibu_id = Penduduk::where('jenis_kelamin', 'P')
         ->where('status_perkawinan', 'kawin')
+        ->whereNotIn('id', $ibuTerpakai)
         ->get()
         ->map(fn($p) => [
             'value' => $p->id,
@@ -168,19 +174,23 @@ class PendudukController extends Controller
         $penduduk = Penduduk::where('uuid', $uuid)->firstOrFail();
 
         // Ambil semua data pekerjaan dan pendidikan dalam format ['value' => id, 'label' => nama]
-        $pekerjaan = Pekerjaan::all()->map(fn($p) => ['value' => $p->id, 'label' => $p->pekerjaan])->toArray();
-        $pendidikan = Pendidikan::all()->map(fn($p) => ['value' => $p->id, 'label' => $p->pendidikan])->toArray();
+        $pekerjaan = Pekerjaan::all()->map(fn($p) => ['value' => $p->id, 'label' => $p->nama_pekerjaan])->toArray();
+        $pendidikan = Pendidikan::all()->map(fn($p) => ['value' => $p->id, 'label' => $p->jenjang])->toArray();
 
-        // Ambil data ayah (laki-laki, sudah menikah)
+        // Ambil data ayah (laki-laki, sudah menikah dan bukan ayah dari penduduk yang sudah ada)
+        $ayahTerpakai = Penduduk::whereNotNull('ayah_id')->pluck('ayah_id')->toArray();
         $ayah_id = Penduduk::where('jenis_kelamin', 'L')
             ->where('status_perkawinan', 'kawin')
+            ->whereNotIn('id', $ayahTerpakai)
             ->get()
             ->map(fn($p) => ['value' => $p->id, 'label' => $p->nama_lengkap])
             ->toArray();
 
-        // Ambil data ibu (perempuan, sudah menikah)
+        // Ambil data ibu (perempuan, sudah menikah dan bukan ibu dari penduduk yang sudah ada)
+        $ibuTerpakai = Penduduk::whereNotNull('ibu_id')->pluck('ibu_id')->toArray();
         $ibu_id = Penduduk::where('jenis_kelamin', 'P')
             ->where('status_perkawinan', 'kawin')
+            ->whereNotIn('id', $ibuTerpakai)
             ->get()
             ->map(fn($p) => ['value' => $p->id, 'label' => $p->nama_lengkap])
             ->toArray();
