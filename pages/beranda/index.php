@@ -53,11 +53,11 @@
           <a href="../galeri" class="text-white font-semibold hover:underline"
             >Galeri</a
           >
-          <a
+         <!-- <a
             href="#"
             class="bg-[#E5A025] text-black px-4 py-1 rounded-full hover:bg-[#d9981c] transition"
             >Masuk</a
-          >
+          > -->
         </div>
       </nav>
     </div>

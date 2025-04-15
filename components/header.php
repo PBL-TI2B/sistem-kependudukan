@@ -28,8 +28,8 @@
       class="<?= ($active == 'berita') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Berita</a>
     <a href="../galeri"
       class="<?= ($active == 'galeri') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Galeri</a>
-    <a href="../login"
-      class="mt-3 md:mt-0 bg-[#E5A025] text-black px-4 py-1 rounded-full hover:bg-[#d9981c] transition">Masuk</a>
+    <!--<a href="../login"
+      class="mt-3 md:mt-0 bg-[#E5A025] text-black px-4 py-1 rounded-full hover:bg-[#d9981c] transition">Masuk</a> -->
   </nav>
 
   <!-- Script for Toggle -->
