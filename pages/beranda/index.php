@@ -103,7 +103,7 @@
         </div>
         <!-- Gambar -->
         <img
-          src="../../src/kepala-desa.png"
+          src="../../src/kepala-desa"
           alt="Kepala Desa"
           class="mt-6 md:mt-0 h-56 w-56 md:h-[250px] md:w-[250px] object-cover shadow-lg rounded-full"
           style="border-radius: 100px 130px 100px 140px"
