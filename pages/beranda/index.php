@@ -55,7 +55,7 @@
   <div class="container mx-auto grid md:grid-cols-2 gap-2 items-center">
     
     <!-- Foto Kepala Desa -->
-    <div class="flex justify-center md:justify-start">
+    <div class="flex justify-center md:justify-start ml-16">
     <img src="../../src/kepala-desa.png" alt="Kepala Desa" class="w-64 h-64 rounded-full object-cover">
     </div>
 
@@ -193,7 +193,7 @@
       </div>
 
       <!-- List berita kecil -->
-      <div class="grid grid-cols-1 gap-4">
+      <div class="md:col-span-2 grid gap-4">
       <div class="flex gap-4 bg-white p-2 rounded shadow items-center">
           <img src="../../src/berita-lain.png" class="w-20 h-20 object-cover rounded" alt="Berita kecil">
           <div>
