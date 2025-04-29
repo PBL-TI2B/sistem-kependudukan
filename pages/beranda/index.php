@@ -13,21 +13,6 @@
   $active = 'beranda';
   include '../../components/header.php';
   ?>
-  
-  <?php if ($active == 'beranda') : ?>
-      <script>
-      const header = document.getElementById('header');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 10) {
-          header.classList.add('bg-[#0B391D]');
-        } else {
-          header.classList.remove('bg-[#0B391D]');
-        }
-      });
-    </script>
-    <?php endif; 
-    ?>
-
   <!-- End Header -->
 
   <!-- Hero Section -->
@@ -40,29 +25,36 @@
   </section>
 
   <!-- Statistik -->
-  <div class="relative z-10 -mt-20">
-  <div class="bg-[#192019] rounded-[50px] px-8 py-6 max-w-5xl mx-auto flex justify-around items-center text-white shadow-lg">
-    <div class="text-center">
-      <div class="text-2xl font-bold text-yellow-500">1.152</div>
-      <div class="text-sm mt-1">Penduduk</div>
-    </div>
-    <div class="border-l border-gray-400 h-8 mx-4"></div>
-    <div class="text-center">
-      <div class="text-2xl font-bold text-yellow-500">304</div>
-      <div class="text-sm mt-1">Kepala Keluarga</div>
-    </div>
-    <div class="border-l border-gray-400 h-8 mx-4"></div>
-    <div class="text-center">
-      <div class="text-2xl font-bold text-yellow-500">607</div>
-      <div class="text-sm mt-1">Laki-laki</div>
-    </div>
-    <div class="border-l border-gray-400 h-8 mx-4"></div>
-    <div class="text-center">
-      <div class="text-2xl font-bold text-yellow-500">547</div>
-      <div class="text-sm mt-1">Perempuan</div>
+<div class="relative z-10 -mt-20 px-4">
+  <div class="max-w-5xl mx-auto relative">
+    <!-- Background -->
+    <div class="bg-[url('../../src/ellipseStat.svg')] absolute inset-0 bg-center z-0 h-full w-full bg-cover bg-no-repeat"></div>
+
+    <!-- Konten -->
+    <div class="relative px-6 md:px-8 py-6 flex justify-around items-center text-white z-10">
+      <div class="text-center flex-1 mb-4 md:mb-0">
+        <div class="text-2xl font-bold text-yellow-500">1.152</div>
+        <div class="text-sm mt-1">Penduduk</div>
+      </div>
+      <div class="hidden md:block border-l border-gray-400 h-8 mx-4"></div>
+      <div class="text-center flex-1 mb-4 md:mb-0">
+        <div class="text-2xl font-bold text-yellow-500">304</div>
+        <div class="text-sm mt-1">Kepala Keluarga</div>
+      </div>
+      <div class="hidden md:block border-l border-gray-400 h-8 mx-4"></div>
+      <div class="text-center flex-1 mb-4 md:mb-0">
+        <div class="text-2xl font-bold text-yellow-500">607</div>
+        <div class="text-sm mt-1">Laki-laki</div>
+      </div>
+      <div class="hidden md:block border-l border-gray-400 h-8 mx-4"></div>
+      <div class="text-center flex-1">
+        <div class="text-2xl font-bold text-yellow-500">547</div>
+        <div class="text-sm mt-1">Perempuan</div>
+      </div>
     </div>
   </div>
 </div>
+
 
 
 <!-- Sambutan Kepala Desa -->
@@ -124,49 +116,65 @@
   <div class="relative overflow-x-auto">
   <div id="scrolling-wrapper" class="flex whitespace-nowrap gap-4 pb-4">
         <!-- item -->
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
-      <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
-      <div class="font-semibold text-white">Wisnu Sadewa</div>
-      <div class="text-sm text-white mb-2">Kepala Desa</div>
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Wisnu Sadewa</div>
+      <div class="text-sm text-gray-500">Kepala Desa</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
-      <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
-      <div class="font-semibold text-white">Kamal</div>
-      <div class="text-sm text-white mb-2">Staff</div>
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
-      <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
-      <div class="font-semibold text-white">Kamal</div>
-      <div class="text-sm text-white mb-2">Staff</div>
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
-      <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
-      <div class="font-semibold text-white">Kamal</div>
-      <div class="text-sm text-white mb-2">Staff</div>
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
-      <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
-      <div class="font-semibold text-white">Kamal</div>
-      <div class="text-sm text-white mb-2">Staff</div>
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
-      <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
-      <div class="font-semibold text-white">Kamal</div>
-      <div class="text-sm text-white mb-2">Staff</div>
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
-      <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
-      <div class="font-semibold text-white">Kamal</div>
-      <div class="text-sm text-white mb-2">Staff</div>
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
     </div>
 
-    
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
+    </div>
+
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
+    </div>
+
+    <div class="flex-shrink-0 w-40 bg-white rounded-lg shadow-lg p-4 text-center">
+      <img src="../../src/kepala-desa.png" class="w-32 h-32 object-cover rounded-full mx-auto mb-2" alt="Foto">
+      <div class="font-semibold text-gray-800">Desita Ranita</div>
+      <div class="text-sm text-gray-500">Staff</div>
+    </div>
     <!-- Tambahin sebanyak apapun -->
   </div>
 </section>
@@ -182,49 +190,42 @@
       </a>
     </div>
 
-    <!-- Konten 2 kolom -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
       
       <!-- Berita besar -->
-      <div class=" rounded p-4 flex flex-col items-left text-left pl-16">
-        <img src="../../src/berita-utama.png" class="mb-4 rounded max-w-md w-full" alt="Berita">
+      <div class="bg-white shadow rounded p-4">
+        <img src="../../src/berita-utama.png" class="mb-4 rounded" alt="Berita">
         <h3 class="font-semibold text-lg mb-2">Pemerintah Desa Jabung melakukan bagi baksos</h3>
         <p class="text-sm text-gray-500">2 Februari 2025</p>
-        <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada xxxxx xxxxx xxxx  xxxxxxx
-        Selain pembagian makanan, acara ini juga menjadi ajang sosialisasi pentingnya perilaku hidup bersih dan sehat.</p>
       </div>
 
       <!-- List berita kecil -->
-      <div class="flex flex-col gap-4">
-        <div class="flex gap-4 p-2 rounded items-left">
-          <img src="../../src/berita-lain.png" class="w-24 h-24 object-cover rounded" alt="Berita kecil">
+      <div class="md:col-span-2 grid gap-4">
+      <div class="flex gap-4 bg-white p-2 rounded shadow items-center">
+          <img src="../../src/berita-lain.png" class="w-20 h-20 object-cover rounded" alt="Berita kecil">
           <div>
             <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
             <p class="text-xs text-gray-500">2 Februari 2025</p>
-            <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
           </div>
         </div>
 
-        <div class="flex gap-4 p-2 rounded items-left">
-          <img src="../../src/berita-lain.png" class="w-24 h-24 object-cover rounded" alt="Berita kecil">
+        <div class="flex gap-4 bg-white p-2 rounded shadow items-center">
+          <img src="../../src/berita-lain.png" class="w-20 h-20 object-cover rounded" alt="Berita kecil">
           <div>
             <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
             <p class="text-xs text-gray-500">2 Februari 2025</p>
-            <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
           </div>
         </div>
 
-        <div class="flex gap-4 p-2 rounded items-left">
-          <img src="../../src/berita-lain.png" class="w-24 h-24 object-cover rounded" alt="Berita kecil">
+        <div class="flex gap-4 bg-white p-2 rounded shadow items-center">
+          <img src="../../src/berita-lain.png" class="w-20 h-20 object-cover rounded" alt="Berita kecil">
           <div>
             <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
             <p class="text-xs text-gray-500">2 Februari 2025</p>
-            <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
           </div>
         </div>
-        
+        <!-- ... -->
       </div>
-
     </div>
   </div>
 </section>
