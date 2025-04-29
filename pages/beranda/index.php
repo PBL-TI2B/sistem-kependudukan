@@ -42,9 +42,9 @@
   <!-- End Header -->
 
   <!-- Hero Section -->
-  <section class="relative bg-cover bg-center h-[420px] md:h-[900px]" style="background-image: url('../../src/kantor-desa.png');">
+  <section class="relative bg-cover bg-center h-[420px] sm:h-[540px] md:h-[760px] lg:h-[900px]" style="background-image: url('../../src/kantor-desa.png');">
     <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-start items-center text-white text-center">
-      <h1 class="mx-4 mt-28 md:mt-72 mb-2 text-6xl md:text-8xl italianno-regular">Selamat Datang</h1>
+      <h1 class="mx-4 mt-28 sm:mt-52 md:mt-60 lg:mt-72 mb-2 text-6xl md:text-8xl italianno-regular">Selamat Datang</h1>
       <p class="mx-4 text-md md:text-3xl font-bold md:mx-2 mt-4">DESA JABUNG KECAMATAN GANTIWARNO</p>
       <p class="mx-4 text-md md:text-3xl font-bold md:mx-4 mt-0">KABUPATEN KLATEN</p>
       <p class="mx-4 text-sm md:text-2xl mt-2 md:mt-9 font-medium">sumber informasi terbaru tentang pemerintahan Desa Jabung</p>
@@ -53,31 +53,31 @@
 
   <!-- Statistik -->
   <div class="relative z-10 -mt-60 mx-5">
-    <div class="px-6 py-6 max-w-6xl mx-auto flex justify-center items-center text-white" style="background-image: url('../../src/ellipseStat.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; min-height: 475px;">
+    <div class="px-6 py-6 max-w-6xl mx-auto flex justify-center items-center text-white md:px-auto" style="background-image: url('../../src/ellipseStat.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; min-height: 475px;">
       <div class="text-center mx-4">
-        <div class="text-md md:text-6xl font-bold text-yellow-500">1.152</div>
-        <div class="text-xs md:text-3xl mt-1">Penduduk</div>
+        <div class="text-md sm:text-3xl lg:text-6xl font-bold text-yellow-500">1.152</div>
+        <div class="text-xs sm:text-xl lg:text-3xl mt-1">Penduduk</div>
       </div>
-      <div class="block border-l border-gray-400 h-16 md:h-40 md:mx-4"></div>
+      <div class="block border-l border-gray-400 h-16 sm:h-20 lg:h-40 md:mx-4"></div>
       <div class="text-center mx-4">
-        <div class="text-md md:text-6xl font-bold text-yellow-500">304</div>
-        <div class="text-xs md:text-3xl mt-1">Kepala Keluarga</div>
+        <div class="text-md sm:text-3xl lg:text-6xl font-bold text-yellow-500">304</div>
+        <div class="text-xs sm:text-xl lg:text-3xl mt-1">Kepala Keluarga</div>
       </div>
-      <div class="block border-l border-gray-400 h-16 md:h-40 md:mx-4"></div>
+      <div class="block border-l border-gray-400 h-16 sm:h-20 lg:h-40 md:mx-4"></div>
       <div class="text-center mx-4">
-        <div class="text-md md:text-6xl font-bold text-yellow-500">607</div>
-        <div class="text-xs md:text-3xl mt-1">Laki-laki</div>
+        <div class="text-md sm:text-3xl lg:text-6xl font-bold text-yellow-500">607</div>
+        <div class="text-xs sm:text-xl lg:text-3xl mt-1">Laki-laki</div>
       </div>
-      <div class="block border-l border-gray-400 h-16 md:h-40 md:mx-4"></div>
+      <div class="block border-l border-gray-400 h-16 sm:h-20 lgd:h-40 md:mx-4"></div>
       <div class="text-center mx-4">
-        <div class="text-md md:text-6xl font-bold text-yellow-500">547</div>
-        <div class="text-xs md:text-3xl mt-1">Perempuan</div>
+        <div class="text-md sm:text-3xl lg:text-6xl font-bold text-yellow-500">547</div>
+        <div class="text-xs sm:text-xl lg:text-3xl mt-1">Perempuan</div>
       </div>
   </div>
     </div>
 
   <!-- Sambutan Kepala Desa -->
-  <section class="bg-green-800 -mt-36 md:mt-10 text-white mx-4 md:mx-48 mb-3 md:mb-5 rounded-xl md:px-16 md:py-10 px-6 py-4">
+  <section class="bg-green-800 mx-4 max-w-6xl lg:mx-auto -mt-36 sm:-mt-20 md:mt-8 lg:mt-10 text-white mb-3 lg:mb-5 rounded-xl lg:px-16 lg:py-10 px-6 py-4">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
 
       <!-- Teks Sambutan -->
@@ -101,7 +101,7 @@
 
 
 <!-- Section Visi Misi -->
-<section class="max-w-full md:mx-48 rounded-xl flex flex-col md:flex-row gap-3 md:gap-5 mx-4">
+<section class="mx-4 max-w-6xl lg:mx-auto rounded-xl flex flex-col md:flex-row gap-3 lg:gap-5">
   <!-- Visi -->
   <div class="bg-green-800 rounded-xl flex-grow flex flex-col md:w-2/5 text-center md:px-16 md:py-10 px-6 py-4">
     <h2 class="text-xl md:text-3xl font-bold text-yellow-500 mb-4">Visi</h2>
@@ -127,8 +127,8 @@
 </section>
 
 <!-- Struktur Organisasi -->
-<section class="mx-auto mt-10 px-4">
-  <h2 class="md:mx-44 text-xl md:text-5xl font-bold text-start mb-6 text-yellow-500">Struktur Organisasi Pemerintahan Desa</h2>
+<section class="mx-4 max-w-6xl lg:mx-auto mt-10">
+  <h2 class=" text-xl md:text-5xl font-bold text-start mb-6 text-yellow-500">Struktur Organisasi Pemerintahan Desa</h2>
 
   <div class="relative overflow-x-auto">
   <div id="scrolling-wrapper" class="flex whitespace-nowrap gap-4 pb-4">
@@ -181,9 +181,10 @@
 </section>
 
   <!-- Berita Desa -->
-  <section class="bg-gray-100 pt-5 px-4 md:px-48">
+  <section class="bg-gray-100 pt-5">
+    <div class="mx-4 max-w-6xl lg:mx-auto">
       <!-- Header judul + tombol -->
-      <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center justify-between mb-8 ">
         <h2 class="text-xl md:text-5xl font-bold">Berita Desa</h2>
         <a href="../../pages/berita" class="inline-block bg-[#0E462B] hover:bg-[#0E462B] text-white font-semibold py-2 px-4 rounded-xl shadow-md transition duration-300 text-sm">
           Jelajahi Berita Desa
@@ -232,46 +233,46 @@
 
         </div>
       </div>
+    </div>
   </section>
 
 
   <!-- Galeri Desa -->
-  <section class="bg-gray-100 pb-20 pt-5 px-4 md:px-48">
-    <div class="flex items-center justify-between mt-4 mb-8">
-    <h2 class="text-xl md:text-5xl font-bold">Galeri Desa</h2>
-    <a href="../../pages/galeri" class="inline-block text-sm bg-[#0E462B] hover:bg-[#0E462B] text-white font-semibold py-2 px-4 rounded-xl transition">
+  <section class="bg-gray-100 pb-20 pt-5">
+    <div class="flex items-center justify-between mt-4 mb-8 mx-4 max-w-6xl lg:mx-auto ">
+      <h2 class="text-xl md:text-5xl font-bold">Galeri Desa</h2>
+      <a href="../../pages/galeri" class="inline-block text-sm bg-[#0E462B] hover:bg-[#0E462B] text-white font-semibold py-2 px-4 rounded-xl transition">
         Jelajahi Galeri Desa
       </a>
-    </div>
+        </div>
 
-      <!-- Video wrapper -->
-      <div class="relative z-20 w-11/12 max-w-4xl mx-auto -mb-64 px-4">
-      <video controls class="w-full rounded-xl shadow-lg">
-        <source src="video-url.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+        <!-- Video wrapper -->
+        <div class="relative max-w-6xl mx-4 lg:mx-auto z-20">
+          <div class="relative w-full pb-[56.25%]"> <!-- Aspect ratio 16:9 -->
+            <iframe class="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/dPRB8xE6RWA?si=EVSUnFHOKm1Uu25o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
   </section>
 
   <!-- Masonry Grid -->
-  <section class="bg-[#0E462B] pt-64 pb-10 md:pb-20">
-  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 px-4">
-  <img src="../../src/kepala-desa.png" alt="Galeri 1" class="w-full rounded-xl object-cover">
-    <img src="../../src/kantor-desa.png" alt="Galeri 2" class="w-full rounded-xl object-cover">
-    <img src="../../src/berita-utama.png" alt="Galeri 3" class="w-full rounded-xl object-cover">
-    <img src="../../src/kepala-desa.png" alt="Galeri 4" class="w-full rounded-xl object-cover">
-    <img src="../../src/berita-lain.png" alt="Galeri 5" class="w-full rounded-xl object-cover">
-    <img src="../../src/kantor-desa.png" alt="Galeri 6" class="w-full rounded-xl object-cover">
-    <img src="../../src/kepala-desa.png" alt="Galeri 5" class="w-full rounded-xl object-cover">
-    <img src="../../src/kantor-desa.png" alt="Galeri 6" class="w-full rounded-xl object-cover">
-    <!-- Tambahkan lebih banyak gambar -->
-  </div>
-</section>
+  <section class="bg-[#0E462B] pt-20 pb-10 md:pb-20 max-w-6xl mx-4 lg:mx-auto ">
+    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+    <img src="../../src/kepala-desa.png" alt="Galeri 1" class="w-full rounded-xl object-cover">
+      <img src="../../src/kantor-desa.png" alt="Galeri 2" class="w-full rounded-xl object-cover">
+      <img src="../../src/berita-utama.png" alt="Galeri 3" class="w-full rounded-xl object-cover">
+      <img src="../../src/kepala-desa.png" alt="Galeri 4" class="w-full rounded-xl object-cover">
+      <img src="../../src/berita-lain.png" alt="Galeri 5" class="w-full rounded-xl object-cover">
+      <img src="../../src/kantor-desa.png" alt="Galeri 6" class="w-full rounded-xl object-cover">
+      <img src="../../src/kepala-desa.png" alt="Galeri 5" class="w-full rounded-xl object-cover">
+      <img src="../../src/kantor-desa.png" alt="Galeri 6" class="w-full rounded-xl object-cover">
+      <!-- Tambahkan lebih banyak gambar -->
+    </div>
+  </section>
 
 
   <!-- Sejarah Desa -->
-  <section class="pb-6 md:pb-12 px-4">
-  <div class="container md:px-48">
+  <section class="pb-6 md:pb-12 mx-4 max-w-6xl lg:mx-auto ">
+  <div class="container">
   <h2 class="text-xl md:text-5xl font-bold text-yellow-500 mb-6">Sejarah Desa Jabung</h2>
       <p class="text-sm md:text-lg text-white mb-2">Selamat Datang di Bumi Desa Jabung - Gantiwarno, Klaten.</p>
       <p class="text-sm md:text-lg text-white mb-2">Desa Jabung terletak di Kecamatan Gantiwarno, Klaten, Jawa Tengah. Jabung menjadi salah satu dari 16 desa di Kecamatan Gantiwarno. Wilayahnya kini meliputi 28 RT dan 13 RW dengan total jumlah pendudukan berdasarkan data tahun 2023 sebanyak 3.450 jiwa.</p>

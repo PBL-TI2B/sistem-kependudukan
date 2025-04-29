@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer class="bg-[#0B391D] text-white px-6 py-12 justify-between">
-  <div class="max-w-[1600px] mx-auto flex flex-wrap gap-8 justify-center sm:justify-between">
+  <div class="max-w-7xl mx-auto flex flex-wrap gap-8 justify-center lg:justify-between">
     
     <!-- Logo & Alamat -->
     <div class="flex flex-col sm:flex-row sm:space-x-4 items-center sm:items-start text-center sm:text-left flex-none">

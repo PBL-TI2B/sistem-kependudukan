@@ -1,5 +1,5 @@
 <header id="header" class="text-white px-4 py-3 fixed top-0 w-full z-50 transition-colors duration-300 <?= ($active != 'beranda') ? 'bg-[#0B391D]' : '' ?>">
-  <div class="max-w-[1600px] md:px-auto flex flex-wrap justify-between items-center mx-auto">
+  <div class="max-w-7xl md:px-auto flex flex-wrap justify-between items-center mx-auto">
     <!-- Logo & Nama Desa -->
   <div class="flex items-center space-x-3">
     <img src="../../src/logo.svg" alt="Logo Desa Jabung" class="h-10 md:h-16" />
