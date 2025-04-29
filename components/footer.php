@@ -1,6 +1,6 @@
 <!-- Footer -->
-<footer class="bg-[#0B391D] text-white px-6 py-12">
-  <div class="max-w-7xl mx-auto flex flex-wrap gap-8 justify-center sm:justify-between">
+<footer class="bg-[#0B391D] text-white px-6 py-12 justify-between">
+  <div class="max-w-[1600px] mx-auto flex flex-wrap gap-8 justify-center sm:justify-between">
     
     <!-- Logo & Alamat -->
     <div class="flex flex-col sm:flex-row sm:space-x-4 items-center sm:items-start text-center sm:text-left flex-none">
@@ -66,7 +66,8 @@
   </div>
 
   <!-- Copyright -->
-  <div class="mt-8 border-t border-gray-400 pt-4 text-center text-xs">
+  <!-- <div class="mt-8 border-t border-gray-400 pt-4 text-center text-xs"> -->
+  <div class="mt-8  pt-4 text-center text-xs">
     <p>&copy; Team-1 PBL 2025</p>
   </div>
 </footer>

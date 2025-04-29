@@ -9,11 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
   <style>
-      .italianno-regular {
+    .italianno-regular {
       font-family: "Italianno", cursive;
       font-weight: 400;
       font-style: normal;
-      font-size: 96px;
+      /* font-size: 96px; */
     }
   </style>
 </head>
@@ -42,136 +42,134 @@
   <!-- End Header -->
 
   <!-- Hero Section -->
-  <section class="relative bg-cover bg-center h-[860px]" style="background-image: url('../../src/kantor-desa.png');">
+  <section class="relative bg-cover bg-center h-[420px] md:h-[900px]" style="background-image: url('../../src/kantor-desa.png');">
     <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-start items-center text-white text-center">
-      <h1 class=" mt-52 mb-2 italianno-regular">Selamat Datang</h1>
-      <p class="text-3xl font-bold md:mx-2 mt-4">DESA JABUNG KECAMATAN GANTIWARNO</p>
-      <p class="text-3xl font-bold md:mx-4 mt-0">KABUPATEN KLATEN</p>
-      <p class="text-2xl mt-9 font-medium">sumber informasi terbaru tentang pemerintahan Desa Jabung</p>
+      <h1 class="mx-4 mt-28 md:mt-72 mb-2 text-6xl md:text-8xl italianno-regular">Selamat Datang</h1>
+      <p class="mx-4 text-md md:text-3xl font-bold md:mx-2 mt-4">DESA JABUNG KECAMATAN GANTIWARNO</p>
+      <p class="mx-4 text-md md:text-3xl font-bold md:mx-4 mt-0">KABUPATEN KLATEN</p>
+      <p class="mx-4 text-sm md:text-2xl mt-2 md:mt-9 font-medium">sumber informasi terbaru tentang pemerintahan Desa Jabung</p>
     </div>
   </section>
 
   <!-- Statistik -->
-  <div class="relative z-10 -mt-80 mx-5">
-    <div class="px-24 py-6 max-w-5xl mx-auto flex justify-around items-center text-white" style="background-image: url('../../src/ellipseStat.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; min-height: 475px;">
-      <div class="text-center">
-        <div class="text-2xl font-bold text-yellow-500">1.152</div>
-        <div class="text-sm mt-1">Penduduk</div>
+  <div class="relative z-10 -mt-60 mx-5">
+    <div class="px-6 py-6 max-w-6xl mx-auto flex justify-center items-center text-white" style="background-image: url('../../src/ellipseStat.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; min-height: 475px;">
+      <div class="text-center mx-4">
+        <div class="text-md md:text-6xl font-bold text-yellow-500">1.152</div>
+        <div class="text-xs md:text-3xl mt-1">Penduduk</div>
       </div>
-      <div class="border-l border-gray-400 h-8 mx-4"></div>
-      <div class="text-center">
-        <div class="text-2xl font-bold text-yellow-500">304</div>
-        <div class="text-sm mt-1">Kepala Keluarga</div>
+      <div class="block border-l border-gray-400 h-16 md:h-40 md:mx-4"></div>
+      <div class="text-center mx-4">
+        <div class="text-md md:text-6xl font-bold text-yellow-500">304</div>
+        <div class="text-xs md:text-3xl mt-1">Kepala Keluarga</div>
       </div>
-      <div class="border-l border-gray-400 h-8 mx-4"></div>
-      <div class="text-center">
-        <div class="text-2xl font-bold text-yellow-500">607</div>
-        <div class="text-sm mt-1">Laki-laki</div>
+      <div class="block border-l border-gray-400 h-16 md:h-40 md:mx-4"></div>
+      <div class="text-center mx-4">
+        <div class="text-md md:text-6xl font-bold text-yellow-500">607</div>
+        <div class="text-xs md:text-3xl mt-1">Laki-laki</div>
       </div>
-      <div class="border-l border-gray-400 h-8 mx-4"></div>
-      <div class="text-center">
-        <div class="text-2xl font-bold text-yellow-500">547</div>
-        <div class="text-sm mt-1">Perempuan</div>
+      <div class="block border-l border-gray-400 h-16 md:h-40 md:mx-4"></div>
+      <div class="text-center mx-4">
+        <div class="text-md md:text-6xl font-bold text-yellow-500">547</div>
+        <div class="text-xs md:text-3xl mt-1">Perempuan</div>
       </div>
+  </div>
     </div>
+
+  <!-- Sambutan Kepala Desa -->
+  <section class="bg-green-800 -mt-36 md:mt-10 text-white mx-4 md:mx-48 mb-3 md:mb-5 rounded-xl md:px-16 md:py-10 px-6 py-4">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+
+      <!-- Teks Sambutan -->
+      <div class="flex-1"> <!-- Menambahkan padding kiri -->
+        <h2 class="text-xl md:text-5xl font-semibold mb-4 text-yellow-500">Sambutan Kepala Desa</h2>
+        <p class="md:text-4xl font-bold">WISNU SADEWA</p>
+        <p class="mb-4 md:text-3xl">Kepala Desa Jabung</p>
+        <p class="text-sm md:text-lg font-bold">Assalamualaikum Wr. Wb.</p>
+        <p class="text-sm md:text-lg">
+          Website ini hadir sebagai wujud transformasi desa Jabung menjadi desa yang mampu memanfaatkan teknologi informasi dan komunikasi, terintegrasi kedalam sistem online. Keterbukaan informasi publik, pelayanan publik, dan kegiatan perekonomian di desa guna mewujudkan desa Jabung sebagai desa wisata berkelanjutan, adaptasi dan mitigasi terhadap perubahan iklim serta menjadi desa yang mandiri.
+        </p>
+      </div>
+
+      <!-- Foto Kepala Desa -->
+      <div class="flex justify-center md:justify-end ">
+      <img src="../../src/kepala-desa.png" alt="Kepala Desa" class="w-60 h-60 rounded-full object-cover">
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- Section Visi Misi -->
+<section class="max-w-full md:mx-48 rounded-xl flex flex-col md:flex-row gap-3 md:gap-5 mx-4">
+  <!-- Visi -->
+  <div class="bg-green-800 rounded-xl flex-grow flex flex-col md:w-2/5 text-center md:px-16 md:py-10 px-6 py-4">
+    <h2 class="text-xl md:text-3xl font-bold text-yellow-500 mb-4">Visi</h2>
+    <p class="text-white md:text-lg flex-grow">
+      Desa Jabung mampu menjadi desa yang berprestasi dan mewujudkan masyarakat sejahtera.
+    </p>
   </div>
 
-<!-- Sambutan Kepala Desa -->
-<section class="bg-green-800 text-white mx-4 md:mx-48 mb-8 p-4 rounded-lg">
-  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-
-    <!-- Teks Sambutan -->
-    <div class="flex-1 pl-4 pr-4"> <!-- Menambahkan padding kiri -->
-      <h2 class="text-2xl font-bold mb-4 text-yellow-500">Sambutan Kepala Desa</h2>
-      <p class="font-bold">WISNU SADEWA</p>
-      <p class="mb-4">Kepala Desa Jabung</p>
-      <p class="text-sm font-bold">Assalamualaikum Wr. Wb.</p>
-      <p class="text-sm">
-        Website ini hadir sebagai wujud transformasi desa Jabung menjadi desa yang mampu memanfaatkan teknologi informasi dan komunikasi, terintegrasi kedalam sistem online. Keterbukaan informasi publik, pelayanan publik, dan kegiatan perekonomian di desa guna mewujudkan desa Jabung sebagai desa wisata berkelanjutan, adaptasi dan mitigasi terhadap perubahan iklim serta menjadi desa yang mandiri.
-      </p>
-    </div>
-
-    <!-- Foto Kepala Desa -->
-    <div class="flex justify-center md:justify-start ml-16">
-    <img src="../../src/kepala-desa.png" alt="Kepala Desa" class="w-64 h-64 rounded-full object-cover">
-    </div>
-
-  </div>
-</section>
-
-
-  <!-- Section Visi Misi -->
-<section class="max-w-6xl  mt-8 mx-48">
-  <div class="flex flex-col md:flex-row gap-8">
-    <!-- Visi -->
-    <div class="bg-green-800 rounded-lg shadow-lg p-6 flex-1">
-      <h2 class="text-2xl font-bold text-yellow-500 mb-4">Visi</h2>
-      <p class="text-white">
-        Desa Jabung mampu menjadi desa yang berprestasi dan mewujudkan masyarakat sejahtera.
-      </p>
-    </div>
-
-    <!-- Misi -->
-    <div class="bg-green-800 rounded-lg shadow-lg p-6 flex-1">
-      <h2 class="text-2xl font-bold text-yellow-500 mb-4">Misi</h2>
-      <ul class="list-disc list-inside text-white space-y-2">
-        <li>Mewujudkan tata kelola pemerintahan yang baik</li>
-        <li>Meningkatkan pelayanan publik</li>
-        <li>Meningkatkan kualitas SDM dan sumber daya manusia</li>
-        <li>Meningkatkan ketahanan ekonomi</li>
-        <li>Meningkatkan kualitas lingkungan hidup</li>
-        <li>Meningkatkan fasilitas kesehatan masyarakat</li>
-        <li>Meningkatkan perekonomian dan kesejahteraan masyarakat</li>
-        <li>Memperkuat kerja sama dan sinergi</li>
-      </ul>
-    </div>
+  <!-- Misi -->
+  <div class="bg-green-800 rounded-xl flex-grow flex flex-col md:w-3/4 md:px-24 md:py-10 px-10 py-4">
+    <h2 class="text-xl md:text-3xl font-bold text-yellow-500 mb-4 text-center">Misi</h2>
+    <ol class="text-white md:text-lg list-decimal list-outsite flex-grow">
+      <li>Mewujudkan tata kelola pemerintahan yang baik</li>
+      <li>Meningkatkan pelayanan publik</li>
+      <li>Meningkatkan kualitas SDM dan sumber daya manusia</li>
+      <li>Meningkatkan ketahanan ekonomi</li>
+      <li>Meningkatkan kualitas lingkungan hidup</li>
+      <li>Meningkatkan fasilitas kesehatan masyarakat</li>
+      <li>Meningkatkan perekonomian dan kesejahteraan masyarakat</li>
+      <li>Memperkuat kerja sama dan sinergi</li>
+    </ul>
   </div>
 </section>
 
 <!-- Struktur Organisasi -->
-<section class="mx-auto mt-16 px-4">
-  <h2 class="text-2xl font-bold text-center mb-6 text-yellow-500">Struktur Organisasi Pemerintahan Desa</h2>
+<section class="mx-auto mt-10 px-4">
+  <h2 class="md:mx-44 text-xl md:text-5xl font-bold text-start mb-6 text-yellow-500">Struktur Organisasi Pemerintahan Desa</h2>
 
   <div class="relative overflow-x-auto">
   <div id="scrolling-wrapper" class="flex whitespace-nowrap gap-4 pb-4">
         <!-- item -->
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
+    <div class="flex-shrink-0 w-64 bg-green-800 rounded-xl shadow-lg text-center">
       <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
       <div class="font-semibold text-white">Wisnu Sadewa</div>
       <div class="text-sm text-white mb-2">Kepala Desa</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
+    <div class="flex-shrink-0 w-64 bg-green-800 rounded-xl shadow-lg text-center">
       <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
       <div class="font-semibold text-white">Kamal</div>
       <div class="text-sm text-white mb-2">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
+    <div class="flex-shrink-0 w-64 bg-green-800 rounded-xl shadow-lg text-center">
       <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
       <div class="font-semibold text-white">Kamal</div>
       <div class="text-sm text-white mb-2">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
+    <div class="flex-shrink-0 w-64 bg-green-800 rounded-xl shadow-lg text-center">
       <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
       <div class="font-semibold text-white">Kamal</div>
       <div class="text-sm text-white mb-2">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
+    <div class="flex-shrink-0 w-64 bg-green-800 rounded-xl shadow-lg text-center">
       <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
       <div class="font-semibold text-white">Kamal</div>
       <div class="text-sm text-white mb-2">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
+    <div class="flex-shrink-0 w-64 bg-green-800 rounded-xl shadow-lg text-center">
       <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
       <div class="font-semibold text-white">Kamal</div>
       <div class="text-sm text-white mb-2">Staff</div>
     </div>
 
-    <div class="flex-shrink-0 w-64 bg-green-800 rounded-lg shadow-lg text-center">
+    <div class="flex-shrink-0 w-64 bg-green-800 rounded-xl shadow-lg text-center">
       <img src="../../src/kepala-desa.png" class="w-64 h-64 object-cover mr-0 mb-2 rounded-t-lg" alt="Foto">
       <div class="font-semibold text-white">Kamal</div>
       <div class="text-sm text-white mb-2">Staff</div>
@@ -182,106 +180,102 @@
   </div>
 </section>
 
-<!-- Berita Desa -->
-<section class="bg-gray-100">
-  <div class="container mx-auto p-16">
-    <!-- Header judul + tombol -->
-    <div class="flex items-center justify-between mb-8">
-      <h2 class="text-2xl font-bold">Berita Desa</h2>
-      <a href="../../pages/berita" class="inline-block bg-[#0E462B] hover:bg-[#0E462B] text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 text-sm">
-        Jelajahi Berita Desa
-      </a>
-    </div>
-
-    <!-- Konten 2 kolom -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <!-- Berita besar -->
-      <div class=" rounded p-4 flex flex-col items-left text-left pl-16">
-        <img src="../../src/berita-utama.png" class="mb-4 rounded max-w-md w-full" alt="Berita">
-        <h3 class="font-semibold text-lg mb-2">Pemerintah Desa Jabung melakukan bagi baksos</h3>
-        <p class="text-sm text-gray-500">2 Februari 2025</p>
-        <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada xxxxx xxxxx xxxx  xxxxxxx
-        Selain pembagian makanan, acara ini juga menjadi ajang sosialisasi pentingnya perilaku hidup bersih dan sehat.</p>
+  <!-- Berita Desa -->
+  <section class="bg-gray-100 pt-5 px-4 md:px-48">
+      <!-- Header judul + tombol -->
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-xl md:text-5xl font-bold">Berita Desa</h2>
+        <a href="../../pages/berita" class="inline-block bg-[#0E462B] hover:bg-[#0E462B] text-white font-semibold py-2 px-4 rounded-xl shadow-md transition duration-300 text-sm">
+          Jelajahi Berita Desa
+        </a>
       </div>
 
-      <!-- List berita kecil -->
-      <div class="flex flex-col gap-4">
-        <div class="flex gap-4 p-2 rounded items-left">
-          <img src="../../src/berita-lain.png" class="w-24 h-24 object-cover rounded" alt="Berita kecil">
-          <div>
-            <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
-            <p class="text-xs text-gray-500">2 Februari 2025</p>
-            <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
-          </div>
+      <!-- Konten 2 kolom -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <!-- Berita besar -->
+        <div class="rounded flex flex-col items-left text-left">
+          <img src="../../src/berita-utama.png" class="mb-4 rounded-xl w-full" alt="Berita">
+          <h3 class="font-semibold text-lg mb-2">Pemerintah Desa Jabung melakukan bagi baksos</h3>
+          <p class="text-sm text-gray-500">2 Februari 2025</p>
+          <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada xxxxx xxxxx xxxx  xxxxxxx
+          Selain pembagian makanan, acara ini juga menjadi ajang sosialisasi pentingnya perilaku hidup bersih dan sehat.</p>
         </div>
 
-        <div class="flex gap-4 p-2 rounded items-left">
-          <img src="../../src/berita-lain.png" class="w-24 h-24 object-cover rounded" alt="Berita kecil">
-          <div>
-            <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
-            <p class="text-xs text-gray-500">2 Februari 2025</p>
-            <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
+        <!-- List berita kecil -->
+        <div class="flex flex-col gap-4 justify-between">
+          <div class="flex gap-4 items-left">
+          <img src="../../src/berita-lain.png" class="w-32 h-20 md:w-64 md:h-36 object-cover rounded-md md:rounded-xl" alt="Berita kecil">
+            <div>
+              <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
+              <p class="text-xs text-gray-500">2 Februari 2025</p>
+              <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex gap-4 p-2 rounded items-left">
-          <img src="../../src/berita-lain.png" class="w-24 h-24 object-cover rounded" alt="Berita kecil">
-          <div>
-            <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
-            <p class="text-xs text-gray-500">2 Februari 2025</p>
-            <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
+          <div class="flex gap-4 items-left">
+            <img src="../../src/berita-lain.png" class="w-32 h-20 md:w-64 md:h-36 object-cover rounded-md md:rounded-xl" alt="Berita kecil">
+            <div>
+              <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
+              <p class="text-xs text-gray-500">2 Februari 2025</p>
+              <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
+            </div>
           </div>
+
+          <div class="flex gap-4 items-left">
+            <img src="../../src/berita-lain.png" class="w-32 h-20 md:w-64 md:h-36 object-cover rounded-md md:rounded-xl" alt="Berita kecil">
+            <div>
+              <h4 class="font-semibold text-sm">Pemerintah Desa Jabung melakukan bagi baksos</h4>
+              <p class="text-xs text-gray-500">2 Februari 2025</p>
+              <p class="text-sm">Pemerintah Desa Jabung baru ini melakukan bagi baksos bagi keluarga terdaftar pada...</p>
+            </div>
+          </div>
+
         </div>
-        
       </div>
-
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Galeri Desa -->
-  <section class="bg-gray-100 pb-20 relative">
-  <div class="flex items-center justify-between pr-16 mb-8">
-  <h2 class="text-2xl font-bold mb-4 pl-16">Galeri Desa</h2>
-  <a href="../../pages/galeri" class="inline-block text-sm bg-[#0E462B] hover:bg-[#0E462B] text-white font-semibold py-2 px-4 rounded-lg transition">
-      Jelajahi Galeri Desa
-    </a>
-  </div>
+  <section class="bg-gray-100 pb-20 pt-5 px-4 md:px-48">
+    <div class="flex items-center justify-between mt-4 mb-8">
+    <h2 class="text-xl md:text-5xl font-bold">Galeri Desa</h2>
+    <a href="../../pages/galeri" class="inline-block text-sm bg-[#0E462B] hover:bg-[#0E462B] text-white font-semibold py-2 px-4 rounded-xl transition">
+        Jelajahi Galeri Desa
+      </a>
+    </div>
 
-    <!-- Video wrapper -->
-    <div class="relative z-20 w-11/12 max-w-4xl mx-auto -mb-64 px-4">
-    <video controls class="w-full rounded-xl shadow-lg">
-      <source src="video-url.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</section>
+      <!-- Video wrapper -->
+      <div class="relative z-20 w-11/12 max-w-4xl mx-auto -mb-64 px-4">
+      <video controls class="w-full rounded-xl shadow-lg">
+        <source src="video-url.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
 
   <!-- Masonry Grid -->
-  <section class="bg-[#0E462B] pt-64 pb-20">
+  <section class="bg-[#0E462B] pt-64 pb-10 md:pb-20">
   <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 px-4">
-  <img src="../../src/kepala-desa.png" alt="Galeri 1" class="w-full rounded-lg object-cover">
-    <img src="../../src/kantor-desa.png" alt="Galeri 2" class="w-full rounded-lg object-cover">
-    <img src="../../src/berita-utama.png" alt="Galeri 3" class="w-full rounded-lg object-cover">
-    <img src="../../src/kepala-desa.png" alt="Galeri 4" class="w-full rounded-lg object-cover">
-    <img src="../../src/berita-lain.png" alt="Galeri 5" class="w-full rounded-lg object-cover">
-    <img src="../../src/kantor-desa.png" alt="Galeri 6" class="w-full rounded-lg object-cover">
-    <img src="../../src/kepala-desa.png" alt="Galeri 5" class="w-full rounded-lg object-cover">
-    <img src="../../src/kantor-desa.png" alt="Galeri 6" class="w-full rounded-lg object-cover">
+  <img src="../../src/kepala-desa.png" alt="Galeri 1" class="w-full rounded-xl object-cover">
+    <img src="../../src/kantor-desa.png" alt="Galeri 2" class="w-full rounded-xl object-cover">
+    <img src="../../src/berita-utama.png" alt="Galeri 3" class="w-full rounded-xl object-cover">
+    <img src="../../src/kepala-desa.png" alt="Galeri 4" class="w-full rounded-xl object-cover">
+    <img src="../../src/berita-lain.png" alt="Galeri 5" class="w-full rounded-xl object-cover">
+    <img src="../../src/kantor-desa.png" alt="Galeri 6" class="w-full rounded-xl object-cover">
+    <img src="../../src/kepala-desa.png" alt="Galeri 5" class="w-full rounded-xl object-cover">
+    <img src="../../src/kantor-desa.png" alt="Galeri 6" class="w-full rounded-xl object-cover">
     <!-- Tambahkan lebih banyak gambar -->
   </div>
 </section>
 
 
   <!-- Sejarah Desa -->
-  <section class="py-12 mx-24">
-  <div class="container mx-auto px-4 md:px-24">
-  <h2 class="text-2xl font-bold text-yellow-500 mb-6">Sejarah Desa Jabung</h2>
-      <p class="text-sm text-white">Selamat Datang di Bumi Desa Jabung - Gantiwarno, Klaten.</p>
-      <p class="text-sm text-white">Desa Jabung terletak di Kecamatan Gantiwarno, Klaten, Jawa Tengah. Jabung menjadi salah satu dari 16 desa di Kecamatan Gantiwarno. Wilayahnya kini meliputi 28 RT dan 13 RW dengan total jumlah pendudukan berdasarkan data tahun 2023 sebanyak 3.450 jiwa.</p>
-      <p class="text-sm text-white">Desa Jabung menjadi salah satu pusat kegiatan pertanian di kecamatan, dengan hasil pertanian seperti padi, jagung, tembakau, dan palawija menjadi komoditas utama yang dihasilkan oleh masyarakat setempat. Infrastruktur desa yang baik serta akses jalan yang memadai juga mendukung mobilitas dan distribusi hasil pertanian ke pasar-pasar di sekitar wilayah Kabupaten Klaten.</p>
+  <section class="pb-6 md:pb-12 px-4">
+  <div class="container md:px-48">
+  <h2 class="text-xl md:text-5xl font-bold text-yellow-500 mb-6">Sejarah Desa Jabung</h2>
+      <p class="text-sm md:text-lg text-white mb-2">Selamat Datang di Bumi Desa Jabung - Gantiwarno, Klaten.</p>
+      <p class="text-sm md:text-lg text-white mb-2">Desa Jabung terletak di Kecamatan Gantiwarno, Klaten, Jawa Tengah. Jabung menjadi salah satu dari 16 desa di Kecamatan Gantiwarno. Wilayahnya kini meliputi 28 RT dan 13 RW dengan total jumlah pendudukan berdasarkan data tahun 2023 sebanyak 3.450 jiwa.</p>
+      <p class="text-sm md:text-lg text-white">Desa Jabung menjadi salah satu pusat kegiatan pertanian di kecamatan, dengan hasil pertanian seperti padi, jagung, tembakau, dan palawija menjadi komoditas utama yang dihasilkan oleh masyarakat setempat. Infrastruktur desa yang baik serta akses jalan yang memadai juga mendukung mobilitas dan distribusi hasil pertanian ke pasar-pasar di sekitar wilayah Kabupaten Klaten.</p>
     </div>
   </section>
 

@@ -1,9 +1,11 @@
-<header id="header" class="text-white px-4 md:px-[120px] py-3 flex flex-wrap justify-between items-center fixed top-0 w-full z-50 transition-colors duration-300 <?= ($active != 'beranda') ? 'bg-[#0B391D]' : '' ?>">
+<header id="header" class="text-white px-4 py-3 fixed top-0 w-full z-50 transition-colors duration-300 <?= ($active != 'beranda') ? 'bg-[#0B391D]' : '' ?>">
+  <div class="max-w-[1600px] md:px-auto flex flex-wrap justify-between items-center mx-auto">
+    <!-- Logo & Nama Desa -->
   <div class="flex items-center space-x-3">
-    <img src="../../src/logo.svg" alt="Logo Desa Jabung" class="h-10" />
+    <img src="../../src/logo.svg" alt="Logo Desa Jabung" class="h-10 md:h-16" />
     <div class="leading-tight">
-      <p class="text-sm font-bold text-[#E5A025]">Desa Jabung</p>
-      <p class="text-xs text-white">Kabupaten Klaten</p>
+      <p class="text-sm md:text-2xl font-bold text-[#E5A025]">Desa Jabung</p>
+      <p class="text-xs md:text-xl text-white">Kabupaten Klaten</p>
     </div>
   </div>
 
@@ -16,7 +18,7 @@
   </button>
 
   <!-- Navigation Menu -->
-  <nav id="menu" class="hidden w-full md:flex md:items-center md:space-x-6 text-sm font-medium md:w-auto mt-4 md:mt-0">
+  <nav id="menu" class="hidden w-full md:flex md:items-center md:space-x-6 text-sm md:text-xl font-medium md:w-auto mt-4 md:mt-0">
     <a href="../beranda"
       class="<?= ($active == 'beranda') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Beranda</a>
     <a href="../infografis"
@@ -26,6 +28,7 @@
     <a href="../galeri"
       class="<?= ($active == 'galeri') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Galeri</a>
   </nav>
+</div>
 </header>
 
 <!-- Script -->
