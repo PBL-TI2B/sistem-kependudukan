@@ -40,30 +40,29 @@
   </section>
 
   <!-- Statistik -->
-  <div class="relative z-10 -mt-20">
-  <div class="bg-[#192019] rounded-[50px] px-8 py-6 max-w-5xl mx-auto flex justify-around items-center text-white shadow-lg">
-    <div class="text-center">
-      <div class="text-2xl font-bold text-yellow-500">1.152</div>
-      <div class="text-sm mt-1">Penduduk</div>
-    </div>
-    <div class="border-l border-gray-400 h-8 mx-4"></div>
-    <div class="text-center">
-      <div class="text-2xl font-bold text-yellow-500">304</div>
-      <div class="text-sm mt-1">Kepala Keluarga</div>
-    </div>
-    <div class="border-l border-gray-400 h-8 mx-4"></div>
-    <div class="text-center">
-      <div class="text-2xl font-bold text-yellow-500">607</div>
-      <div class="text-sm mt-1">Laki-laki</div>
-    </div>
-    <div class="border-l border-gray-400 h-8 mx-4"></div>
-    <div class="text-center">
-      <div class="text-2xl font-bold text-yellow-500">547</div>
-      <div class="text-sm mt-1">Perempuan</div>
+  <div class="relative z-10 -mt-40 mx-5">
+    <div class="px-24 py-6 max-w-5xl mx-auto flex justify-around items-center text-white" style="background-image: url('../../src/ellipseStat.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; min-height: 475px;">
+      <div class="text-center">
+        <div class="text-2xl font-bold text-yellow-500">1.152</div>
+        <div class="text-sm mt-1">Penduduk</div>
+      </div>
+      <div class="border-l border-gray-400 h-8 mx-4"></div>
+      <div class="text-center">
+        <div class="text-2xl font-bold text-yellow-500">304</div>
+        <div class="text-sm mt-1">Kepala Keluarga</div>
+      </div>
+      <div class="border-l border-gray-400 h-8 mx-4"></div>
+      <div class="text-center">
+        <div class="text-2xl font-bold text-yellow-500">607</div>
+        <div class="text-sm mt-1">Laki-laki</div>
+      </div>
+      <div class="border-l border-gray-400 h-8 mx-4"></div>
+      <div class="text-center">
+        <div class="text-2xl font-bold text-yellow-500">547</div>
+        <div class="text-sm mt-1">Perempuan</div>
+      </div>
     </div>
   </div>
-</div>
-
 
 <!-- Sambutan Kepala Desa -->
 <section class="bg-green-800 text-white mt-16 mx-4 md:mx-48 mb-8 p-4 rounded-lg">
