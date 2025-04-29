@@ -1,6 +1,6 @@
-<header id="header" class="text-white px-4 md:px-8 py-3 flex flex-wrap justify-between items-center fixed top-0 w-full z-50 transition-colors duration-300 <?= ($active != 'beranda') ? 'bg-[#0B391D]' : '' ?>">
+<header id="header" class="text-white px-4 md:px-[120px] py-3 flex flex-wrap justify-between items-center fixed top-0 w-full z-50 transition-colors duration-300 <?= ($active != 'beranda') ? 'bg-[#0B391D]' : '' ?>">
   <div class="flex items-center space-x-3">
-    <img src="../../src/logo.png" alt="Logo Desa Jabung" class="h-16" />
+    <img src="../../src/logo.svg" alt="Logo Desa Jabung" class="h-10" />
     <div class="leading-tight">
       <p class="text-sm font-bold text-[#E5A025]">Desa Jabung</p>
       <p class="text-xs text-white">Kabupaten Klaten</p>

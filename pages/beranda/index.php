@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desa Jabung</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <style>
+      .italianno-regular {
+      font-family: "Italianno", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 96px;
+    }
+  </style>
 </head>
 <body class="bg-[#0E462B] text-gray-800">
 
@@ -31,16 +42,17 @@
   <!-- End Header -->
 
   <!-- Hero Section -->
-  <section class="relative bg-cover bg-center h-[500px]" style="background-image: url('../../src/kantor-desa.png');">
-    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
-      <h1 class="text-4xl font-semibold mb-2">Selamat Datang</h1>
-      <p class="text-lg">DESA JABUNG KECAMATAN GANTIWARNO KABUPATEN KLATEN</p>
-      <p class="text-sm mt-2">sumber informasi terbaru tentang pemerintahan Desa Jabung</p>
+  <section class="relative bg-cover bg-center h-[860px]" style="background-image: url('../../src/kantor-desa.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-start items-center text-white text-center">
+      <h1 class=" mt-52 mb-2 italianno-regular">Selamat Datang</h1>
+      <p class="text-3xl font-bold md:mx-2 mt-4">DESA JABUNG KECAMATAN GANTIWARNO</p>
+      <p class="text-3xl font-bold md:mx-4 mt-0">KABUPATEN KLATEN</p>
+      <p class="text-2xl mt-9 font-medium">sumber informasi terbaru tentang pemerintahan Desa Jabung</p>
     </div>
   </section>
 
   <!-- Statistik -->
-  <div class="relative z-10 -mt-40 mx-5">
+  <div class="relative z-10 -mt-80 mx-5">
     <div class="px-24 py-6 max-w-5xl mx-auto flex justify-around items-center text-white" style="background-image: url('../../src/ellipseStat.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; min-height: 475px;">
       <div class="text-center">
         <div class="text-2xl font-bold text-yellow-500">1.152</div>
@@ -65,16 +77,11 @@
   </div>
 
 <!-- Sambutan Kepala Desa -->
-<section class="bg-green-800 text-white mt-16 mx-4 md:mx-48 mb-8 p-4 rounded-lg">
-  <div class="container mx-auto grid md:grid-cols-2 gap-2 items-center">
-    
-    <!-- Foto Kepala Desa -->
-    <div class="flex justify-center md:justify-start ml-16">
-    <img src="../../src/kepala-desa.png" alt="Kepala Desa" class="w-64 h-64 rounded-full object-cover">
-    </div>
+<section class="bg-green-800 text-white mx-4 md:mx-48 mb-8 p-4 rounded-lg">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
 
     <!-- Teks Sambutan -->
-    <div class="pl-4 pr-4"> <!-- Menambahkan padding kiri -->
+    <div class="flex-1 pl-4 pr-4"> <!-- Menambahkan padding kiri -->
       <h2 class="text-2xl font-bold mb-4 text-yellow-500">Sambutan Kepala Desa</h2>
       <p class="font-bold">WISNU SADEWA</p>
       <p class="mb-4">Kepala Desa Jabung</p>
@@ -84,12 +91,17 @@
       </p>
     </div>
 
+    <!-- Foto Kepala Desa -->
+    <div class="flex justify-center md:justify-start ml-16">
+    <img src="../../src/kepala-desa.png" alt="Kepala Desa" class="w-64 h-64 rounded-full object-cover">
+    </div>
+
   </div>
 </section>
 
 
   <!-- Section Visi Misi -->
-<section class="max-w-6xl mx-auto mt-8 px-4">
+<section class="max-w-6xl  mt-8 mx-48">
   <div class="flex flex-col md:flex-row gap-8">
     <!-- Visi -->
     <div class="bg-green-800 rounded-lg shadow-lg p-6 flex-1">
@@ -264,7 +276,7 @@
 
 
   <!-- Sejarah Desa -->
-  <section class="py-12">
+  <section class="py-12 mx-24">
   <div class="container mx-auto px-4 md:px-24">
   <h2 class="text-2xl font-bold text-yellow-500 mb-6">Sejarah Desa Jabung</h2>
       <p class="text-sm text-white">Selamat Datang di Bumi Desa Jabung - Gantiwarno, Klaten.</p>
