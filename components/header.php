@@ -1,5 +1,5 @@
-<header class="bg-[#0B391D] text-white px-4 md:px-8 py-3 flex flex-wrap justify-between items-center sticky top-0 z-50">
-  <!-- Logo -->
+<!-- Header -->
+<header id="header" class="text-white px-4 md:px-8 py-3 flex flex-wrap justify-between items-center fixed top-0 w-full z-50 transition-colors duration-300 <?= ($active != 'beranda') ? 'bg-[#0B391D]' : '' ?>">
   <div class="flex items-center space-x-3">
     <img src="../../src/logo.png" alt="Logo Desa Jabung" class="h-16" />
     <div class="leading-tight">
@@ -26,16 +26,15 @@
       class="<?= ($active == 'berita') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Berita</a>
     <a href="../galeri"
       class="<?= ($active == 'galeri') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Galeri</a>
-    <a href="../login"
-      class="mt-3 md:mt-0 bg-[#E5A025] text-black px-4 py-1 rounded-full hover:bg-[#d9981c] transition">Masuk</a>
   </nav>
-
-  <!-- Script for Toggle -->
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
 </header>
+
+<!-- Script -->
+<script>
+// Untuk toggle menu mobile
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
