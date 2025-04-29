@@ -1,4 +1,4 @@
-<header class="bg-[#0B391D] text-white px-4 md:px-8 py-3 flex flex-wrap justify-between items-center">
+<header class="sticky top-0 z-50 shadow-md bg-[#0B391D] text-white px-4 md:px-8 py-3 flex flex-wrap justify-between items-center">
   <!-- Logo -->
   <div class="flex items-center space-x-3">
     <img src="../../src/logo.png" alt="Logo Desa Jabung" class="h-16" />

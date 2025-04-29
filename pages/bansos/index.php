@@ -5,7 +5,7 @@
     <title>Infografis Bansos Desa Jabung</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 text-gray-800">
+  <body class="bg-white text-gray-800">
     <!-- Header -->
     <?php
   $active = 'infografis';
@@ -63,53 +63,53 @@
 
       <!-- Grid Cards -->
       <div class="grid grid-cols-2 md:grid-cols-2 gap-4 mb-8">
-        <div class="bg-white rounded-md shadow px-6 py-4">
+        <div class="bg-[#C5DCBE] rounded-[20px]  shadow px-6 py-4">
           <p class="text-2xl font-bold text-green-700">
             67 <span class="text-sm text-gray-700 font-normal">Penduduk</span>
           </p>
           <p class="text-sm text-gray-800 mt-1">
-            mendapatkan bantuan <br /><span class="font-bold"
+            Mendapatkan Bantuan <br /><span class="font-bold"
               >BPJS PBI Ketenagakerjaan</span
             >
           </p>
         </div>
-        <div class="bg-white rounded-md shadow px-6 py-4">
+        <div class="bg-[#C5DCBE] rounded-[20px] shadow px-6 py-4">
           <p class="text-2xl font-bold text-green-700">
             41 <span class="text-sm text-gray-700 font-normal">Penduduk</span>
           </p>
           <p class="text-sm text-gray-800 mt-1">
-            mendapatkan bantuan <br /><span class="font-bold">PKH</span>
+            Mendapatkan Bantuan <br /><span class="font-bold">PKH</span>
           </p>
         </div>
-        <div class="bg-white rounded-md shadow px-6 py-4">
+        <div class="bg-[#C5DCBE] rounded-[20px] shadow px-6 py-4">
           <p class="text-2xl font-bold text-green-700">
             35 <span class="text-sm text-gray-700 font-normal">Penduduk</span>
           </p>
           <p class="text-sm text-gray-800 mt-1">
-            mendapatkan bantuan <br /><span class="font-bold">BPNT</span>
+            Mendapatkan Bantuan <br /><span class="font-bold">BPNT</span>
           </p>
         </div>
-        <div class="bg-white rounded-md shadow px-6 py-4">
+        <div class="bg-[#C5DCBE] rounded-[20px] shadow px-6 py-4">
           <p class="text-2xl font-bold text-green-700">
             0 <span class="text-sm text-gray-700 font-normal">Penduduk</span>
           </p>
           <p class="text-sm text-gray-800 mt-1">
-            mendapatkan bantuan <br /><span class="font-bold">PSTN</span>
+            Mendapatkan Bantuan <br /><span class="font-bold">PSTN</span>
           </p>
         </div>
-        <div class="bg-white rounded-md shadow px-6 py-4">
+        <div class="bg-[#C5DCBE] rounded-[20px]  shadow px-6 py-4">
           <p class="text-2xl font-bold text-green-700">
             0 <span class="text-sm text-gray-700 font-normal">Penduduk</span>
           </p>
           <p class="text-sm text-gray-800 mt-1">
-            mendapatkan bantuan <br /><span class="font-bold">BLT 2024</span>
+            Mendapatkan Bantuan <br /><span class="font-bold">BLT 2024</span>
           </p>
         </div>
       </div>
 
       <!-- Input Cek Penerima -->
       <h2 class="text-xl font-bold text-[#E5A025] mb-3">Cek Penerima Bansos</h2>
-      <div class="flex items-center w-full max-w-lg">
+      <div class="flex items-center w-full max-w">
         <input
           type="text"
           placeholder="Masukkan NIK Penerima Bansos"
