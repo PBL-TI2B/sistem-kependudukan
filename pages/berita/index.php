@@ -14,27 +14,14 @@
     ?>
     <!-- End Header -->
 
-    <main class="max-w-7xl mx-auto p-6">
-      <h2 class="text-2xl font-bold text-center text-[#E5A025] mb-8">BERITA DESA</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <main class="mx-4 max-w-6xl lg:mx-auto pt-4 pb-8 mt-16 md:mt-24">
+      <h2 class="text-2xl font-bold text-start text-[#E5A025] mb-4 md:mb-8">BERITA DESA</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
-          <h3 class="font-semibold text-sm">
-            Pemerintah Desa Jabung melakukan bagi baksos
-          </h3>
-          <div class="text-xs text-gray-500 mt-1 mb-2 flex items-center gap-2">
-            <span>2 minggu lalu</span> • <span>Admin</span>
-          </div>
-          <p class="text-xs text-gray-600">
-            Pemerintah Desa Jabung baru ini melakukan bagi baksos ke tiap
-            keluarga ...
-          </p>
-        </div>
+        <div class="bg-white rounded-xl shadow">
+            <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -46,10 +33,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -61,10 +50,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -76,10 +67,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -91,10 +84,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -106,10 +101,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -121,10 +118,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -136,10 +135,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -151,10 +152,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -166,10 +169,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -181,10 +186,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -196,10 +203,12 @@
             keluarga ...
           </p>
         </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded shadow p-4">
-          <div class="bg-gray-300 h-40 rounded mb-3"></div>
           <h3 class="font-semibold text-sm">
             Pemerintah Desa Jabung melakukan bagi baksos
           </h3>
@@ -211,7 +220,24 @@
             keluarga ...
           </p>
         </div>
-      </div>
+          </div>
+        <!-- Card -->
+        <div class="bg-white rounded-xl shadow">
+          <div class="bg-gray-300 aspect-[16/9] rounded-xl mb-2"></div>
+          <div class="px-4 lg:px-6 pb-4">
+
+          <h3 class="font-semibold text-sm">
+            Pemerintah Desa Jabung melakukan bagi baksos
+          </h3>
+          <div class="text-xs text-gray-500 mt-1 mb-2 flex items-center gap-2">
+            <span>2 minggu lalu</span> • <span>Admin</span>
+          </div>
+          <p class="text-xs text-gray-600">
+            Pemerintah Desa Jabung baru ini melakukan bagi baksos ke tiap
+            keluarga ...
+          </p>
+        </div>
+            </div>    </div>
 
       <!-- Pagination -->
       <div class="flex justify-center items-center gap-2 mt-10">

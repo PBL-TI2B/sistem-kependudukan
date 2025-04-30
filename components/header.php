@@ -2,7 +2,7 @@
   <div class="max-w-7xl md:px-auto flex flex-wrap justify-between items-center mx-auto">
     <!-- Logo & Nama Desa -->
   <div class="flex items-center space-x-3">
-    <img src="../../src/logo.svg" alt="Logo Desa Jabung" class="h-10 md:h-16" />
+    <img src="../../src/logo.svg" alt="Logo Desa Jabung" class="h-8 md:h-14" />
     <div class="leading-tight">
       <p class="text-sm md:text-2xl font-bold text-[#E5A025]">Desa Jabung</p>
       <p class="text-xs md:text-xl text-white">Kabupaten Klaten</p>
