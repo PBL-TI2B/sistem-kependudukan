@@ -18,7 +18,7 @@
   </button>
 
   <!-- Navigation Menu -->
-  <button id="menu" class="hidden w-full md:flex md:items-center md:space-x-6 text-sm md:text-xl font-medium md:w-auto mt-4 md:mt-0">
+  <button id="menu" class="hidden flex mb-2 justify-end w-full md:flex space-x-4 md:space-x-6 text-sm md:text-xl font-medium md:w-auto mt-4 md:mt-0">
     <a href="../beranda"
       class="<?= ($active == 'beranda') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Beranda</a>
     <a href="../infografis"
