@@ -7,10 +7,10 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-  <!-- Header -->
+   <!-- Navbar -->
   <?php
   $active = 'profil';
-  include '../../components/header.php';
+  include '../../components/navbar.php';
   ?>
   <!-- End Header -->
 

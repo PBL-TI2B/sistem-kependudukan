@@ -19,20 +19,20 @@
 </head>
 <body class="bg-[#0E462B] text-gray-800">
 
- <!-- Header -->
+  <!-- Navbar -->
  <?php
   $active = 'beranda';
-  include '../../components/header.php';
+  include '../../components/navbar.php';
   ?>
   
   <?php if ($active == 'beranda') : ?>
       <script>
-      const header = document.getElementById('header');
+      const nav = document.getElementById('nav');
       window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
-          header.classList.add('bg-[#0B391D]');
+          nav.classList.add('bg-[#0B391D]');
         } else {
-          header.classList.remove('bg-[#0B391D]');
+          nav.classList.remove('bg-[#0B391D]');
         }
       });
     </script>
@@ -193,7 +193,7 @@
         </div>
 
         <!-- Konten 2 kolom -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <!-- Berita besar -->
           <div class="rounded flex flex-col items-left text-left">
             <img src="../../src/berita-utama.png" class="mb-4 rounded-xl w-full" alt="Berita">
@@ -239,7 +239,7 @@
 
 
     <!-- Galeri Desa -->
-    <section class="bg-gray-100 pb-20 pt-5">
+    <section class="relative bg-gray-100 pb-12 pt-5">
       <div class="flex items-center justify-between mt-4 mb-8 mx-4 max-w-6xl lg:mx-auto ">
         <h2 class="text-xl md:text-5xl font-bold">Galeri Desa</h2>
         <a href="../../pages/galeri" class="inline-block text-sm bg-[#0E462B] hover:bg-[#0E462B] text-white font-semibold py-2 px-4 rounded-xl transition">
@@ -248,7 +248,7 @@
           </div>
 
           <!-- Video wrapper -->
-          <div class="relative max-w-6xl mx-4 lg:mx-auto z-20">
+          <div class="relative max-w-6xl mx-4 lg:mx-auto z-20 -bottom-1/2 ">
             <div class="relative w-full pb-[56.25%]"> <!-- Aspect ratio 16:9 -->
               <iframe class="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/dPRB8xE6RWA?si=EVSUnFHOKm1Uu25o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -256,7 +256,7 @@
     </section>
 
     <!-- Masonry Grid -->
-    <section class="bg-[#0E462B] pt-20 pb-10 md:pb-20 max-w-6xl mx-4 lg:mx-auto ">
+    <section class="bg-[#0E462B] pt-12 pb-8 md:pb-12 max-w-6xl mx-4 lg:mx-auto ">
       <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
       <img src="../../src/kepala-desa.png" alt="Galeri 1" class="w-full rounded-xl object-cover">
         <img src="../../src/kantor-desa.png" alt="Galeri 2" class="w-full rounded-xl object-cover">

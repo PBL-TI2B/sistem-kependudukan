@@ -30,10 +30,10 @@
     </style>
   </head>
   <body class="bg-white font-sans">
-    <!-- Header -->
+     <!-- Navbar -->
     <?php
     $active = 'galeri';
-    include '../../components/header.php';
+    include '../../components/navbar.php';
     ?>
     <!-- End Header -->
 

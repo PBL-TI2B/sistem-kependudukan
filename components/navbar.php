@@ -1,4 +1,4 @@
-<header id="header" class="text-white px-4 py-3 fixed top-0 w-full z-50 transition-colors duration-300 <?= ($active != 'beranda') ? 'bg-[#0B391D]' : '' ?>">
+<nav id="nav" class="text-white px-4 py-3 fixed top-0 w-full z-50 transition-colors duration-300 <?= ($active != 'beranda') ? 'bg-[#0B391D]' : '' ?>">
   <div class="max-w-7xl md:px-auto flex flex-wrap justify-between items-center mx-auto">
     <!-- Logo & Nama Desa -->
   <div class="flex items-center space-x-3">
@@ -18,7 +18,7 @@
   </button>
 
   <!-- Navigation Menu -->
-  <nav id="menu" class="hidden w-full md:flex md:items-center md:space-x-6 text-sm md:text-xl font-medium md:w-auto mt-4 md:mt-0">
+  <button id="menu" class="hidden w-full md:flex md:items-center md:space-x-6 text-sm md:text-xl font-medium md:w-auto mt-4 md:mt-0">
     <a href="../beranda"
       class="<?= ($active == 'beranda') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Beranda</a>
     <a href="../infografis"
@@ -27,9 +27,9 @@
       class="<?= ($active == 'berita') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Berita</a>
     <a href="../galeri"
       class="<?= ($active == 'galeri') ? 'text-[#F6C646]' : 'hover:text-[#F6C646]' ?>">Galeri</a>
-  </nav>
+  </button>
 </div>
-</header>
+</nav>
 
 <!-- Script -->
 <script>

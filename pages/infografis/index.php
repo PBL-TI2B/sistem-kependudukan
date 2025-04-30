@@ -8,10 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body class="bg-white text-gray-800">
-    <!-- Header -->
+     <!-- Navbar -->
     <?php
       $active = 'infografis';
-      include '../../components/header.php';
+      include '../../components/navbar.php';
     ?>
     <!-- End Header -->
 
