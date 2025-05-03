@@ -74,8 +74,8 @@
           <div class="text-md sm:text-3xl lg:text-6xl font-bold text-yellow-500">547</div>
           <div class="text-xs sm:text-xl lg:text-3xl mt-1">Perempuan</div>
         </div>
-    </div>
       </div>
+    </div>
 
     <!-- Sambutan Kepala Desa -->
     <section class="bg-green-800 mx-4 max-w-6xl lg:mx-auto -mt-36 sm:-mt-20 md:mt-8 lg:mt-10 text-white mb-3 lg:mb-5 rounded-xl lg:px-16 lg:py-10 px-6 py-4">
@@ -123,7 +123,7 @@
         <li>Meningkatkan fasilitas kesehatan masyarakat</li>
         <li>Meningkatkan perekonomian dan kesejahteraan masyarakat</li>
         <li>Memperkuat kerja sama dan sinergi</li>
-      </ul>
+      </ol>
     </div>
   </section>
 
